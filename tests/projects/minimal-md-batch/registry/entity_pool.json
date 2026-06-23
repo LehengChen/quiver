@@ -1,0 +1,11 @@
+{
+  "schema_version": "quiver.entity_pool.v1",
+  "entities": [
+    {
+      "canonical_id": "quiver",
+      "label": "Quiver",
+      "aliases": ["directed graph"],
+      "summary": "A directed graph used as input data for representations."
+    }
+  ]
+}

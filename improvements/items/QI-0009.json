@@ -1,0 +1,36 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0009",
+  "title": "Add post-merge graph repair for large accumulated runs",
+  "category": "tooling",
+  "status": "accepted",
+  "severity": "high",
+  "confidence": "high",
+  "problem": "When Quiver scales from small pilots to dozens or hundreds of papers, per-paper serial deltas will not be enough to guarantee a clean global graph. The merged graph can retain incomplete concept consolidation, semantically duplicated nodes, stale ontology-status conflicts, missing support edges, dangling review frontier, and dependency cycles introduced across papers. These problems may not be visible in a single-paper validation pass.",
+  "proposed_change": "Add a dedicated post-merge repair and review stage after accumulated runs. It should analyze the normalized graph globally, detect cycles and strongly connected components, surface probable duplicate or under-merged concepts, identify incomplete dependency neighborhoods, and produce a reviewable repair plan rather than silently rewriting the graph. Repairs should be recorded as explicit review/patch deltas so the process stays auditable.",
+  "acceptance_criteria": "On a larger multi-paper test project, quiver can produce a post-merge audit that reports dependency cycles, suspicious SCCs, duplicate/near-duplicate concept clusters, ontology-status conflicts, and incomplete frontier neighborhoods; accepted repairs are persisted as explicit graph patch artifacts and the rebuilt graph has no unreviewed cycles in dependency_depends_on-style relations.",
+  "observations": [
+    {
+      "project": "quiver",
+      "context": "After ag95-diverse-002: 8 papers produced 213 nodes and 342 edges with low cross-paper reuse, 48 frontier nodes, 13 near-duplicate candidates, and one ontology-status conflict; user noted larger runs will need explicit merge repair and cycle handling.",
+      "created_at": "2026-06-22T13:41:14.253058Z",
+      "observed_by": "codex"
+    },
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "ag95-diverse-003-16p completed with 16 papers, 434 nodes, 740 edges, 6 multi-paper reused nodes, 6 ontology-status conflicts, 64 frontier nodes, and no SCC cycles or self-edges in the normalized graph. This run did not require immediate repair, but it confirms post-merge repair should target ontology-status conflicts and duplicate/similar concepts as scale increases.",
+      "created_at": "2026-06-22T14:40:14.164966Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T13:41:09.719429Z",
+  "updated_at": "2026-06-22T14:40:14.165002Z",
+  "history": [
+    {
+      "at": "2026-06-22T13:41:14.171722Z",
+      "from": "proposed",
+      "to": "accepted",
+      "note": "Accepted as a known scale-up risk before larger supervised batches."
+    }
+  ]
+}

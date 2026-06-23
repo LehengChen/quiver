@@ -1,0 +1,36 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0013",
+  "title": "Add lightweight in-run monitoring snapshots",
+  "category": "observability",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "Full audit-run sampling became increasingly slow during the 16-paper run, and in-progress audits report status unknown until summary.json exists. Manual samples can become stale while a long Codex subprocess finishes.",
+  "proposed_change": "Add a cheap monitor command that reads events.jsonl, current graph size, latest validation report, and active paper state without running full graph audits; write periodic JSONL samples with a clear running/completed status.",
+  "acceptance_criteria": "During a run, monitor samples complete quickly, show running status before summary.json exists, identify the active paper and last event, and do not require recomputing expensive review queues unless requested.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "Manual monitoring wrote 21 JSONL samples during ag95-diverse-003-16p. Full audit sampling became several seconds slower as the graph grew, in-progress status was unknown before summary.json existed, and sample-020 became stale while mr4792069 finished between sampling and note writing. A cheap event-tail monitor would avoid these issues.",
+      "created_at": "2026-06-22T14:40:14.192702Z",
+      "observed_by": "codex"
+    },
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "Implemented monitor-run and used it during ag95-diverse-004-replay-16p. Samples showed running status without summary.json, progress 9/16 through 15/16, active paper detection, graph counts, and latest per-paper warning deltas from skipped-delta event payloads; final sample reported completed with 16 papers, 434 nodes, 740 edges.",
+      "created_at": "2026-06-22T15:12:09.207065Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:39:57.295246Z",
+  "updated_at": "2026-06-22T15:12:09.207099Z",
+  "history": [
+    {
+      "at": "2026-06-22T15:12:08.993458Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Implemented quiver tool monitor-run with optional JSONL append and validated it during ag95-diverse-004-replay-16p."
+    }
+  ]
+}

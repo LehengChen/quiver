@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select {
+  border-radius: 6px;
+}
+
+a {
+  color: var(--color-link);
+}
+
+.screen-message {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  color: var(--color-subtle);
+}

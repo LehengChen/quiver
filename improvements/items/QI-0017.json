@@ -1,0 +1,29 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0017",
+  "title": "Checkpoint serial runs to avoid repeated full replay",
+  "category": "performance",
+  "status": "proposed",
+  "severity": "medium",
+  "confidence": "medium",
+  "problem": "The serial runner preserves deterministic replay semantics by repeatedly merging and validating accepted deltas. At 16 papers this was tolerable, but the final post-extraction validate plus merge window was about 33 seconds and will grow for dozens or hundreds of papers.",
+  "proposed_change": "Keep clean final replay for reproducibility, but add an incremental graph/checkpoint path for in-run package building, validation, and monitoring so each paper does not require full replay work.",
+  "acceptance_criteria": "Serial runs can build the next package from a checkpointed graph; final clean replay still produces the same graph; audit reports checkpoint/replay consistency; per-paper validation/merge overhead remains bounded on larger pilots.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "In ag95-diverse-003-16p, events show mr4792069 extraction finished at elapsed 2859.184s, validation finished at 2876.185s, merge finished at 2892.260s, and run finished at 2892.323s. The final validate/merge window was about 33 seconds on only 16 papers.",
+      "created_at": "2026-06-22T14:44:02.333758Z",
+      "observed_by": "codex"
+    },
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "ag95-diverse-004-replay-16p replayed 16 existing deltas without Codex and still took 295.635 seconds. Lightweight monitor samples showed per-paper replay cost growing with graph size, confirming checkpointed serial state remains important before dozens or hundreds of papers.",
+      "created_at": "2026-06-22T15:12:09.190410Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:43:50.594483Z",
+  "updated_at": "2026-06-22T15:12:09.190453Z",
+  "history": []
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/quiver/quiver-improvement.schema.json",
+  "title": "Quiver Improvement",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "category",
+    "status",
+    "severity",
+    "confidence",
+    "problem",
+    "proposed_change",
+    "acceptance_criteria",
+    "observations",
+    "created_at",
+    "updated_at",
+    "history"
+  ],
+  "properties": {
+    "schema_version": { "const": "quiver.improvement.v1" },
+    "id": { "type": "string", "pattern": "^QI-[0-9]{4}$" },
+    "title": { "type": "string" },
+    "category": { "enum": ["orchestration", "project", "tooling", "memory", "observability", "frontend", "schema", "prompting"] },
+    "status": { "enum": ["proposed", "accepted", "implemented", "verified", "rejected"] },
+    "severity": { "enum": ["high", "medium", "low"] },
+    "confidence": { "enum": ["high", "medium", "low"] },
+    "problem": { "type": "string" },
+    "proposed_change": { "type": "string" },
+    "acceptance_criteria": { "type": "string" },
+    "observations": { "type": "array" },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "history": { "type": "array" }
+  }
+}

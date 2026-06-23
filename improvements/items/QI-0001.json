@@ -1,0 +1,24 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0001",
+  "title": "Keep graph extraction as deltas over an existing graph",
+  "category": "prompting",
+  "status": "implemented",
+  "severity": "high",
+  "confidence": "high",
+  "problem": "Whole-graph extraction for each paper encourages duplicate concepts and unstable edge direction.",
+  "proposed_change": "Make Codex produce per-paper GraphDelta JSON against local search context and an existing canonical graph.",
+  "acceptance_criteria": "Extraction prompts and schemas require GraphDelta output with explicit dependent and prerequisite fields.",
+  "observations": [
+    {
+      "project": "quiver",
+      "context": "MVP scaffold",
+      "created_at": "2026-06-22T00:00:00Z",
+      "quiver_version": "0.0.1",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T00:00:00Z",
+  "updated_at": "2026-06-22T00:00:00Z",
+  "history": []
+}

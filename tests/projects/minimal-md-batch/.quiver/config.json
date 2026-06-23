@@ -1,0 +1,18 @@
+{
+  "schema_version": "quiver.config.v1",
+  "executor": "codex",
+  "model": "",
+  "paper_glob": "sources/papers/**/*.md",
+  "max_excerpt_chars": 12000,
+  "max_search_results": 12,
+  "extraction_policy": {
+    "skip_existing_adequate_nodes": true,
+    "max_extension_depth": 1,
+    "prefer_local_search": true
+  },
+  "codex": {
+    "command": "codex",
+    "args": ["exec", "--json"],
+    "sandbox": "read-only"
+  }
+}

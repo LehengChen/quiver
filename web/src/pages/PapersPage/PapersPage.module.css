@@ -1,0 +1,145 @@
+.page {
+  display: grid;
+  gap: 14px;
+  max-width: 1120px;
+}
+
+.header {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.header p {
+  margin: 7px 0 0;
+  color: var(--color-subtle);
+}
+
+.supportPanel {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.supportHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
+}
+
+.eyebrow {
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.supportHeader h3 {
+  margin: 3px 0 0;
+  color: var(--color-text);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.supportHeader p {
+  margin: 6px 0 0;
+  color: var(--color-subtle);
+  font-size: 13px;
+}
+
+.supportHeader a {
+  border: 1px solid var(--color-border-strong);
+  background: #ffffff;
+  color: var(--color-text);
+  font-size: 13px;
+  padding: 7px 9px;
+  text-decoration: none;
+}
+
+.supportHeader a:hover {
+  background: var(--color-hover);
+}
+
+.nodeSupport {
+  display: grid;
+  gap: 12px;
+}
+
+.nodeTitle {
+  display: grid;
+  gap: 3px;
+}
+
+.nodeTitle strong {
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.supportGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 14px;
+}
+
+.supportColumn {
+  min-width: 0;
+}
+
+.supportColumn h4 {
+  margin: 0 0 8px;
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+.edgeList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edgeList li {
+  padding: 8px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.edgeList strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.edgeRelation {
+  display: block;
+  margin-top: 3px;
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 980px) {
+  .supportGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .supportHeader {
+    grid-template-columns: 1fr;
+  }
+}

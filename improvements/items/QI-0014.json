@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0014",
+  "title": "Separate topical edges from strict dependency edges",
+  "category": "schema",
+  "status": "proposed",
+  "severity": "low",
+  "confidence": "medium",
+  "problem": "The current schema allows belongs_to_topic, and the 16-paper graph contains four such edges. These edges are valid today but are weaker than concept dependencies and can blur the dependency graph the project is trying to expose.",
+  "proposed_change": "Decide whether belongs_to_topic should remain in the core dependency graph. If kept, mark it as non-dependency metadata in audit/site output; otherwise remove it from prompts/schema and migrate existing topical edges.",
+  "acceptance_criteria": "The relation taxonomy document or schema distinguishes strict dependency predicates from topical metadata; visualization can hide or de-emphasize topical edges; validation catches unintended topical edges if the relation is removed.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "Final graph has 4 belongs_to_topic edges out of 740. They came from mr4258055 and mr4574664 and passed validation because the relation is allowed in schema/prompt/validate.py. They are low-volume but semantically weaker than dependency predicates for the intended concept dependency graph.",
+      "created_at": "2026-06-22T14:40:14.229064Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:39:57.440588Z",
+  "updated_at": "2026-06-22T14:40:14.229101Z",
+  "history": []
+}

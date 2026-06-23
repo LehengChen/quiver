@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0008",
+  "title": "Expose non-adequate concepts as a review frontier",
+  "category": "tooling",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "The merged graph stores adequacy signals but there was no command to list concepts that need one-layer expansion or clarification.",
+  "proposed_change": "Add quiver tool frontier to list nodes whose adequacy is not adequate.",
+  "acceptance_criteria": "AG95 pilot frontier lists needs_one_layer and unclear nodes for the next supervised extraction round.",
+  "observations": [],
+  "created_at": "2026-06-22T12:47:19.639710Z",
+  "updated_at": "2026-06-22T12:47:19.710935Z",
+  "history": [
+    {
+      "at": "2026-06-22T12:47:19.710964Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Added tool frontier and CLI test coverage."
+    }
+  ]
+}

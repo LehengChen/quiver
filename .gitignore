@@ -1,0 +1,30 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+tmp/
+*.zip
+web/node_modules/
+web/dist/
+web/playwright-report/
+web/test-results/
+*.tsbuildinfo
+
+# Local Quiver experiments and generated run artifacts. Public demos belong
+# under examples/.
+test_projects/
+results/
+work/
+sources/papers/
+.quiver/
+**/work/attempts/
+**/work/claims/
+**/.quiver/runs/
+**/.quiver/logs/
+**/results/runs/
+**/results/deltas/
+**/results/site/

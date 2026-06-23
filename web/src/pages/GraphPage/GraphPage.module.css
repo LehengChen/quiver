@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  min-height: 760px;
+  height: calc(100vh - 112px);
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mapStage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+}
+
+@media (max-width: 820px) {
+  .page {
+    height: auto;
+    min-height: 0;
+  }
+
+  .mapStage {
+    flex: none;
+    height: 460px;
+    min-height: 0;
+  }
+}

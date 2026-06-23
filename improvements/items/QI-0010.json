@@ -1,0 +1,30 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0010",
+  "title": "Skip image-only markdown headings during paper title ingestion",
+  "category": "tooling",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "Several real AG95 markdown files begin with image-only heading lines, so ingestion can set the paper title to a local image path. That weakens package search queries and reduces existing-node reuse in accumulated runs.",
+  "proposed_change": "When deriving a paper title, ignore empty headings and markdown image-only lines, then use the first substantive heading or text line.",
+  "acceptance_criteria": "A regression with '# ![](images/cover.jpg)' followed by a real heading ingests the real heading as the paper title; affected AG95 papers such as mr4701883, mr4712863, and mr4777095 no longer use image paths as titles.",
+  "observations": [
+    {
+      "project": "quiver",
+      "context": "Pre-run check for ag95-diverse-003-16p found three new papers with image-path titles; after the fix ingest returns real titles.",
+      "created_at": "2026-06-22T13:46:43.190488Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T13:46:43.025259Z",
+  "updated_at": "2026-06-22T13:46:43.190518Z",
+  "history": [
+    {
+      "at": "2026-06-22T13:46:43.109233Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Implemented in ingest title extraction and covered by pytest."
+    }
+  ]
+}

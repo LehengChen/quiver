@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/quiver/graph-delta.schema.json",
+  "title": "Quiver Graph Delta",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "paper_id", "paper_title", "nodes", "edges", "notes"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "quiver.graph_delta.v1" },
+    "paper_id": { "type": "string", "minLength": 1 },
+    "paper_title": { "type": "string" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["canonical_id", "label", "entity_type", "ontology_status", "local_role", "aliases", "summary", "evidence", "confidence", "adequacy"],
+        "properties": {
+          "canonical_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_]*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "entity_type": { "type": "string", "enum": ["definition", "object", "method", "property", "topic", "notation", "primitive"] },
+          "ontology_status": { "type": "string", "enum": ["new", "existing", "refined", "uncertain"] },
+          "local_role": { "type": "string", "enum": ["main", "supporting", "background", "frontier"] },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "summary": { "type": "string" },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["quote", "section"],
+              "properties": {
+                "quote": { "type": "string" },
+                "section": { "type": "string" }
+              }
+            }
+          },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+          "adequacy": { "type": "string", "enum": ["adequate", "needs_one_layer", "conflict", "unclear"] }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["dependent", "prerequisite", "relation", "evidence", "confidence"],
+        "properties": {
+          "dependent": { "type": "string", "minLength": 1 },
+          "prerequisite": { "type": "string", "minLength": 1 },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "definition_depends_on",
+              "uses_method",
+              "has_property",
+              "constructed_using",
+              "specializes",
+              "belongs_to_topic",
+              "has_primitive",
+              "computed_by"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["quote", "section"],
+              "properties": {
+                "quote": { "type": "string" },
+                "section": { "type": "string" }
+              }
+            }
+          },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+        }
+      }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

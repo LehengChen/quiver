@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/quiver/concept-graph.schema.json",
+  "title": "Quiver Concept Graph",
+  "type": "object",
+  "required": ["schema_version", "dataset", "papers", "nodes", "edges"],
+  "properties": {
+    "schema_version": { "const": "quiver.graph.v1" },
+    "dataset": { "type": "object" },
+    "papers": { "type": "array" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "entity_type": { "type": "string" },
+          "local_role": { "type": "string" },
+          "summary": { "type": "string" },
+          "paper_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "dependent", "prerequisite", "relation"],
+        "properties": {
+          "id": { "type": "string" },
+          "dependent": { "type": "string" },
+          "prerequisite": { "type": "string" },
+          "relation": { "type": "string" },
+          "paper_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

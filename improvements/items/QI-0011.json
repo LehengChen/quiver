@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0011",
+  "title": "Track external evidence provenance in graph deltas",
+  "category": "validation",
+  "status": "proposed",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "The 16-paper AG95 run produced accepted deltas whose notes say full arXiv PDFs were consulted, while validation still checks quotes against the local markdown excerpt/source only. This creates non-verbatim evidence warnings and makes it unclear which source supports a node or edge.",
+  "proposed_change": "Add a minimal source/provenance field for evidence entries or delta-level consulted_sources, and teach validation/reporting to distinguish local-source quote misses from explicitly declared external-source evidence.",
+  "acceptance_criteria": "A delta can declare external consulted sources; validation reports quote misses by source scope; run audit summarizes external-source usage; prompts instruct Codex to avoid undeclared external sources or cite them explicitly.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "ag95-diverse-003-16p: mr4701883 notes that full text for omitted sections was consulted from https://arxiv.org/pdf/2304.01269 and contributed 78 evidence quote warnings; mr4792069 notes https://arxiv.org/pdf/2209.02568 and contributed 17 warnings. The current validator reports all as local quote misses, not source-scope provenance issues.",
+      "created_at": "2026-06-22T14:40:14.207623Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:39:57.274430Z",
+  "updated_at": "2026-06-22T14:40:14.207666Z",
+  "history": []
+}

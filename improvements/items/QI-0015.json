@@ -1,0 +1,36 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0015",
+  "title": "Report per-paper warning deltas in serial summaries and audits",
+  "category": "observability",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "Serial run summaries currently store cumulative validation warnings after each accepted paper, so the operator must manually diff totals to identify which paper caused warning growth. The 16-paper run had warning totals 103, 103, 181, 250, 283, 285, 293, 310, hiding the +78 and +69 spikes until post-analysis.",
+  "proposed_change": "Compute and persist per-paper warning and error deltas in summary.json and audit.json, including evidence-entry counts and issue locations for the newly accepted delta.",
+  "acceptance_criteria": "Run summary and audit show warning_delta/error_delta per paper; monitor output can display the latest delta; large warning spikes are visible without manual report diffing.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "ag95-diverse-003-16p cumulative warning totals after fresh papers were 103, 103, 181, 250, 283, 285, 293, 310. Manual diffing was required to see that mr4701883 added +78 warnings and mr4777095 added +69 warnings.",
+      "created_at": "2026-06-22T14:44:02.302775Z",
+      "observed_by": "codex"
+    },
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "ag95-diverse-004-replay-16p summary now records per-paper validation_warning_delta directly: baseline warning papers mr4433080 +31, mr4526821 +21, mr4712864 +30, mr4188814 +21; new warning spikes mr4701883 +78, mr4777095 +69, mr4712863 +33, mr4792069 +17. Audit fallback reports 310 latest warnings from summary.validation_delta when no validation-after reports exist.",
+      "created_at": "2026-06-22T15:12:09.176166Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:43:38.435571Z",
+  "updated_at": "2026-06-22T15:12:09.176215Z",
+  "history": [
+    {
+      "at": "2026-06-22T15:12:09.008835Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Implemented per-paper validation_error_delta and validation_warning_delta in serial summaries/events and audit fallback reports."
+    }
+  ]
+}

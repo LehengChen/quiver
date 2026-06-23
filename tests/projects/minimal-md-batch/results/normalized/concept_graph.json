@@ -1,0 +1,12 @@
+{
+  "schema_version": "quiver.graph.v1",
+  "dataset": {
+    "id": "minimal-md-batch",
+    "title": "Minimal Markdown Batch",
+    "created_at": "2026-06-22T00:00:00Z",
+    "updated_at": "2026-06-22T00:00:00Z"
+  },
+  "papers": [],
+  "nodes": [],
+  "edges": []
+}

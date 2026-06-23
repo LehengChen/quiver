@@ -1,0 +1,149 @@
+{
+  "schema_version": "quiver.improvement_index.v1",
+  "items": [
+    {
+      "id": "QI-0001",
+      "title": "Keep graph extraction as deltas over an existing graph",
+      "status": "implemented",
+      "severity": "high",
+      "category": "prompting",
+      "path": "items/QI-0001.json"
+    },
+    {
+      "id": "QI-0002",
+      "title": "Do not require model-authored graph levels",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "schema",
+      "path": "items/QI-0002.json"
+    },
+    {
+      "id": "QI-0003",
+      "title": "Allow extraction runs to target explicit paper ids",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "orchestration",
+      "path": "items/QI-0003.json"
+    },
+    {
+      "id": "QI-0004",
+      "title": "Use Codex-compatible strict JSON schemas",
+      "status": "implemented",
+      "severity": "high",
+      "category": "schema",
+      "path": "items/QI-0004.json"
+    },
+    {
+      "id": "QI-0005",
+      "title": "Use dependency-style relation names",
+      "status": "implemented",
+      "severity": "high",
+      "category": "schema",
+      "path": "items/QI-0005.json"
+    },
+    {
+      "id": "QI-0006",
+      "title": "Make serial extraction merge only processed deltas",
+      "status": "implemented",
+      "severity": "high",
+      "category": "orchestration",
+      "path": "items/QI-0006.json"
+    },
+    {
+      "id": "QI-0007",
+      "title": "Use normalized evidence matching for mathematical OCR text",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "tooling",
+      "path": "items/QI-0007.json"
+    },
+    {
+      "id": "QI-0008",
+      "title": "Expose non-adequate concepts as a review frontier",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "tooling",
+      "path": "items/QI-0008.json"
+    },
+    {
+      "id": "QI-0009",
+      "title": "Add post-merge graph repair for large accumulated runs",
+      "status": "accepted",
+      "severity": "high",
+      "category": "tooling",
+      "path": "items/QI-0009.json"
+    },
+    {
+      "id": "QI-0010",
+      "title": "Skip image-only markdown headings during paper title ingestion",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "tooling",
+      "path": "items/QI-0010.json"
+    },
+    {
+      "id": "QI-0011",
+      "title": "Track external evidence provenance in graph deltas",
+      "status": "proposed",
+      "severity": "medium",
+      "category": "validation",
+      "path": "items/QI-0011.json"
+    },
+    {
+      "id": "QI-0012",
+      "title": "Calibrate and preserve retrieval scores for existing-node reuse",
+      "status": "proposed",
+      "severity": "medium",
+      "category": "retrieval",
+      "path": "items/QI-0012.json"
+    },
+    {
+      "id": "QI-0013",
+      "title": "Add lightweight in-run monitoring snapshots",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "observability",
+      "path": "items/QI-0013.json"
+    },
+    {
+      "id": "QI-0014",
+      "title": "Separate topical edges from strict dependency edges",
+      "status": "proposed",
+      "severity": "low",
+      "category": "schema",
+      "path": "items/QI-0014.json"
+    },
+    {
+      "id": "QI-0015",
+      "title": "Report per-paper warning deltas in serial summaries and audits",
+      "status": "implemented",
+      "severity": "medium",
+      "category": "observability",
+      "path": "items/QI-0015.json"
+    },
+    {
+      "id": "QI-0016",
+      "title": "Align existing-node reuse validation with merge provenance",
+      "status": "proposed",
+      "severity": "medium",
+      "category": "merge",
+      "path": "items/QI-0016.json"
+    },
+    {
+      "id": "QI-0017",
+      "title": "Checkpoint serial runs to avoid repeated full replay",
+      "status": "proposed",
+      "severity": "medium",
+      "category": "performance",
+      "path": "items/QI-0017.json"
+    },
+    {
+      "id": "QI-0018",
+      "title": "Harden paper-local result reference filtering",
+      "status": "proposed",
+      "severity": "medium",
+      "category": "schema",
+      "path": "items/QI-0018.json"
+    }
+  ]
+}

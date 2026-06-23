@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0012",
+  "title": "Calibrate and preserve retrieval scores for existing-node reuse",
+  "category": "retrieval",
+  "status": "proposed",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "During ag95-diverse-003-16p, most allowed_existing_nodes were weak topical hits and the model repeatedly noted that candidates were unrelated. The package also strips scores from allowed_existing_nodes, so the prompt cannot distinguish strong reuse candidates from low-score noise.",
+  "proposed_change": "Preserve retrieval scores and match rationales in allowed_existing_nodes, add a minimum-score or top-k-by-kind policy, and evaluate a simple reranker that favors title/alias overlap and paper-topic proximity before presenting reusable nodes to Codex.",
+  "acceptance_criteria": "Paper packages include scores for allowed existing nodes; low-score candidates are either filtered or labeled as weak; audit reports reuse-candidate score distributions; a diverse pilot shows fewer unrelated-candidate notes without reducing real cross-paper reuse.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "In the 8 new-paper extension, the model notes for 6 of 8 deltas said allowed/local search candidates were unrelated or not reused. Package local_search_results retained very low scores around 0.03-0.05, while allowed_existing_nodes stripped the scores before prompting. mr4792069 did find real P=W candidates, but also at low scores, so calibration must preserve recall while labeling weak hits.",
+      "created_at": "2026-06-22T14:40:14.220278Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:39:57.290708Z",
+  "updated_at": "2026-06-22T14:40:14.220317Z",
+  "history": []
+}

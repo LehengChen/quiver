@@ -1,0 +1,24 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0018",
+  "title": "Harden paper-local result reference filtering",
+  "category": "schema",
+  "status": "proposed",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "The strict-v1 extraction contract blocks full paper-local identities such as Theorem 2.1 or Lemma 3.4 from becoming concept nodes, but the detector should also cover abbreviated forms and appendix-style result labels before larger runs.",
+  "proposed_change": "Extend concept identity validation for abbreviations such as Thm. 2.1, Prop. 1.7, Cor. 5.2, and Lem. 3.4; support appendix and roman-number result labels such as Theorem A.1 and Proposition II.3; reject id forms such as thm_2_1 and prop_1_7; consider escalating summary-only numbered result references from warning to error in strict mode.",
+  "acceptance_criteria": "Validator tests cover full, abbreviated, appendix, roman, and id-form paper-local result references; package search and allowed existing nodes filter the same identities; strict extraction runs fail before merge if these identities appear outside evidence or section provenance.",
+  "observations": [
+    {
+      "project": "ag95-diverse-strict-v1",
+      "run_id": "strict-v1-16p",
+      "context": "A final identity-field scan over 16 papers, 412 nodes, and 645 edges found zero numbered result identity hits and zero theorem-like entity types. A read-only review still identified additional detector cases to harden before larger batches.",
+      "created_at": "2026-06-23T05:11:03Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-23T05:11:03Z",
+  "updated_at": "2026-06-23T05:11:03Z",
+  "history": []
+}

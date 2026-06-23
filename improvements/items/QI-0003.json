@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0003",
+  "title": "Allow extraction runs to target explicit paper ids",
+  "category": "orchestration",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "A real pilot needed to run the shortest paper first, but limit-only extraction followed worklist order.",
+  "proposed_change": "Add repeatable --paper-id filtering to quiver extract so supervision can choose specific papers.",
+  "acceptance_criteria": "quiver extract --paper-id <id> prepares or runs only matching packages and has CLI regression coverage.",
+  "observations": [],
+  "created_at": "2026-06-22T12:19:46.949204Z",
+  "updated_at": "2026-06-22T12:19:47.032154Z",
+  "history": [
+    {
+      "at": "2026-06-22T12:19:47.032207Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Added extract --paper-id and regression test."
+    }
+  ]
+}

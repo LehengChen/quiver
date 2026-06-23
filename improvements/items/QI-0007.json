@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0007",
+  "title": "Use normalized evidence matching for mathematical OCR text",
+  "category": "tooling",
+  "status": "implemented",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "Verbatim evidence validation produced many false warnings for LaTeX spacing and OCR-normalized formulas in real AG95 papers.",
+  "proposed_change": "Accept exact, token-normalized, or ellipsis-separated evidence matches while preserving warnings for unmatched quotes.",
+  "acceptance_criteria": "AG95 pilot validation has zero false warnings after normalized matching.",
+  "observations": [],
+  "created_at": "2026-06-22T12:47:19.490419Z",
+  "updated_at": "2026-06-22T12:47:19.565494Z",
+  "history": [
+    {
+      "at": "2026-06-22T12:47:19.565527Z",
+      "from": "proposed",
+      "to": "implemented",
+      "note": "Evidence validator now handles math/OCR spacing and ellipsis snippets."
+    }
+  ]
+}

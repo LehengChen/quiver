@@ -1,0 +1,37 @@
+.richText {
+  min-width: 0;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.richText p {
+  margin: 0;
+}
+
+.richText p + p {
+  margin-top: 0.65em;
+}
+
+.richText :global(.katex) {
+  font-size: 1.02em;
+  line-height: 1.2;
+}
+
+.richText :global(.katex-display) {
+  margin: 0.45em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.12em 0;
+}
+
+.inline :global(.katex-display) {
+  display: inline-block;
+  margin: 0 0.2em;
+  vertical-align: middle;
+}

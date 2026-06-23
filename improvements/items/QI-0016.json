@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.improvement.v1",
+  "id": "QI-0016",
+  "title": "Align existing-node reuse validation with merge provenance",
+  "category": "merge",
+  "status": "proposed",
+  "severity": "medium",
+  "confidence": "high",
+  "problem": "The extraction prompt says every edge endpoint must appear in delta nodes, including lightweight existing nodes, but validation allows edge endpoints from existing_nodes even when they are omitted from the delta. Merge only updates node paper_ids and ontology-status history when a node appears in the delta, so implicit existing endpoints can lose provenance.",
+  "proposed_change": "Warn or reject implicit existing-node edge endpoints, validate existing/refined nodes against the current graph and preferably allowed_existing_nodes, and audit explicit reuse versus implicit endpoint reuse.",
+  "acceptance_criteria": "A delta that references an existing graph node without a corresponding lightweight node produces a clear validation warning or error; reused existing/refined nodes are checked against the package graph context; audit reports explicit reuse, implicit endpoint reuse, and ontology-status conflicts.",
+  "observations": [
+    {
+      "project": "ag95-diverse-pilot",
+      "context": "Subagent review found a prompt/validator/merge contract gap: prompts.py asks every edge endpoint to appear in nodes, validate.py accepts endpoints from ids|existing_nodes, and merge.py only updates node paper_ids when the node appears in the delta. Final run had 6 explicit multi-paper reused nodes and 6 ontology-status conflicts, so reuse provenance needs stricter accounting.",
+      "created_at": "2026-06-22T14:44:02.326214Z",
+      "observed_by": "codex"
+    }
+  ],
+  "created_at": "2026-06-22T14:43:44.994681Z",
+  "updated_at": "2026-06-22T14:44:02.326245Z",
+  "history": []
+}
