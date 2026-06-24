@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
-const COLLECTION_ID = "top4-geometric-analysis-narrow-v1";
-const COLLECTION_TITLE = /Top-4 Geometric Analysis \(Narrow\)/i;
+const COLLECTION_ID = "top4-complex-analysis-wide-v1";
+const COLLECTION_TITLE = /Top-4 Complex Analysis \(wide\)/i;
 
 test("graph page renders a dependency-oriented map", async ({ page }, testInfo) => {
   const consoleMessages: string[] = [];
@@ -16,8 +16,10 @@ test("graph page renders a dependency-oriented map", async ({ page }, testInfo) 
 
   const svg = page.getByLabel("Concept dependency graph");
   await expect(svg).toBeVisible();
-  const expected = await page.evaluate(async () => {
-    const graph = await fetch("./graph.json").then((response) => response.json());
+  const expected = await page.evaluate(async (collectionId) => {
+    const collections = await fetch("./collections.json").then((response) => response.json());
+    const collection = collections.collections.find((item: { id: string }) => item.id === collectionId);
+    const graph = await fetch(collection?.graph || "./graph.json").then((response) => response.json());
     const counts = new Map(graph.nodes.map((node: { id: string; paper_ids?: string[] }) => [node.id, 0]));
     graph.edges.forEach((edge: { relation: string; prerequisite: string; dependent: string; paper_ids?: string[] }) => {
       if (edge.relation === "belongs_to_topic") return;
@@ -37,7 +39,7 @@ test("graph page renders a dependency-oriented map", async ({ page }, testInfo) 
           edge.relation !== "belongs_to_topic" && visibleIds.has(edge.prerequisite) && visibleIds.has(edge.dependent)
       ).length
     };
-  });
+  }, COLLECTION_ID);
   const nodeCount = await page.locator("[data-node]").count();
   const edgeCount = Number(await page.locator("[data-edge-count]").getAttribute("data-edge-count"));
   expect(nodeCount).toBe(expected.nodes);

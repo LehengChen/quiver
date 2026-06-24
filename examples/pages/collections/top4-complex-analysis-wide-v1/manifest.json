@@ -1,0 +1,14 @@
+{
+  "schema_version": "quiver.site_manifest.v1",
+  "project_id": "top4-complex-analysis-wide-v1",
+  "title": "Top-4 Complex Analysis (wide)",
+  "generated_at": "2026-06-24T15:01:22.837829Z",
+  "source_graph": "results/normalized/concept_graph.json",
+  "files": [
+    "analysis.json",
+    "graph.json",
+    "manifest.json"
+  ],
+  "frontend": "react",
+  "build_source": "existing_dist"
+}
