@@ -9,6 +9,29 @@ from quiver.project import append_event, now_iso, read_json, read_project_metada
 from quiver.validate import validate_delta
 
 
+PUBLIC_PAPER_FIELDS = {
+    "id",
+    "mrnumber",
+    "title",
+    "authors",
+    "doi",
+    "doi_url",
+    "journal",
+    "year",
+    "volume",
+    "number",
+    "pages",
+    "page_count_estimate",
+    "primary_msc",
+    "primary_msc_description",
+    "citation_count",
+    "item_type",
+    "entry_type",
+    "selection_tags",
+    "topic_selection",
+}
+
+
 def _merge_unique(old: list[Any], new: list[Any]) -> list[Any]:
     seen: set[str] = set()
     out: list[Any] = []
@@ -41,6 +64,17 @@ def _source_text_for_delta(root: Path, delta: dict[str, Any]) -> str | None:
     return None
 
 
+def _paper_metadata_by_id(root: Path) -> dict[str, dict[str, Any]]:
+    paper_index = read_json(root / ".quiver" / "artifacts" / "paper_index.json", default={}) or {}
+    result: dict[str, dict[str, Any]] = {}
+    for paper in paper_index.get("papers", []) or []:
+        paper_id = paper.get("id")
+        if not paper_id:
+            continue
+        result[paper_id] = {key: paper[key] for key in PUBLIC_PAPER_FIELDS if key in paper}
+    return result
+
+
 def merge_deltas(
     root: Path,
     *,
@@ -54,6 +88,7 @@ def merge_deltas(
     edges: dict[tuple[str, str, str], dict[str, Any]] = {}
     papers: dict[str, dict[str, Any]] = {}
     validation_items: list[dict[str, Any]] = []
+    paper_metadata = _paper_metadata_by_id(root)
 
     if seed_existing:
         existing_graph = read_json(root / "results" / "normalized" / "concept_graph.json", default={}) or {}
@@ -90,7 +125,10 @@ def merge_deltas(
         )
         if errors and fail_on_error:
             raise ValueError(f"cannot merge invalid delta {path}: {errors[0]['message']}")
-        papers[paper_id] = {"id": paper_id, "title": delta.get("paper_title") or paper_id}
+        paper_row = dict(paper_metadata.get(paper_id, {}))
+        paper_row["id"] = paper_id
+        paper_row["title"] = delta.get("paper_title") or paper_row.get("title") or paper_id
+        papers[paper_id] = paper_row
 
         for node in delta.get("nodes", []) or []:
             cid = node.get("canonical_id")

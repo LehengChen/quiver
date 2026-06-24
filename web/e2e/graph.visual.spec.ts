@@ -1,10 +1,13 @@
 import { expect, test } from "@playwright/test";
 
+const COLLECTION_ID = "top4-geometric-analysis-narrow-v1";
+const COLLECTION_TITLE = /Top-4 Geometric Analysis \(Narrow\)/i;
+
 test("graph page renders a dependency-oriented map", async ({ page }, testInfo) => {
   const consoleMessages: string[] = [];
   page.on("console", (message) => consoleMessages.push(message.text()));
-  await page.goto("/#/ag95-diverse-strict-v1/graph");
-  await expect(page.getByRole("heading", { name: /ag95-diverse-strict-v1/i })).toBeVisible();
+  await page.goto(`/#/${COLLECTION_ID}/graph`);
+  await expect(page.getByRole("heading", { name: COLLECTION_TITLE })).toBeVisible();
   await expect(page.getByLabel("Concept map filters")).toBeVisible();
   await expect(page.getByText("prerequisite -> dependent")).toBeVisible();
   await expect(page.getByLabel("Minimum references")).toHaveValue("2");
@@ -87,7 +90,7 @@ test("graph page renders a dependency-oriented map", async ({ page }, testInfo) 
 });
 
 test("node selection opens details without changing the visible map", async ({ page }, testInfo) => {
-  await page.goto("/#/ag95-diverse-strict-v1/graph");
+  await page.goto(`/#/${COLLECTION_ID}/graph`);
   await page.getByLabel("Concept dependency graph").scrollIntoViewIfNeeded();
   const baselineNodeCount = await page.locator("[data-node]").count();
   const baselineEdgeCount = await page.locator("[data-edge-count]").getAttribute("data-edge-count");
@@ -140,7 +143,7 @@ test("node selection opens details without changing the visible map", async ({ p
 });
 
 test("paper links filter the graph while preserving the selected node", async ({ page }) => {
-  await page.goto("/#/ag95-diverse-strict-v1/graph");
+  await page.goto(`/#/${COLLECTION_ID}/graph`);
   await page.waitForSelector('[aria-label="Concept dependency graph"] [data-node]');
   await page.locator('[data-node] [data-node-circle="true"]').first().click();
   await page.waitForSelector('aside[aria-label="Concept details"]');
@@ -149,7 +152,7 @@ test("paper links filter the graph while preserving the selected node", async ({
   await expect(paperLink).toBeVisible();
   await paperLink.click();
 
-  await expect(page).toHaveURL(/#\/ag95-diverse-strict-v1\/graph\?[^#]*paper=[^&]+/);
+  await expect(page).toHaveURL(new RegExp(`#/${COLLECTION_ID}/graph\\?[^#]*paper=[^&]+`));
   await expect(page).toHaveURL(/node=/);
   await expect(page.locator('aside[aria-label="Concept details"]')).toBeVisible();
 });

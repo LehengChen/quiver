@@ -10,7 +10,7 @@ export default defineConfig({
     screenshot: "only-on-failure"
   },
   webServer: {
-    command: "python -m http.server 4181 -d ../examples/site",
+    command: "python -m http.server 4181 -d ../examples/pages/geometric-analysis-narrow-v1",
     url: "http://127.0.0.1:4181",
     reuseExistingServer: true,
     timeout: 120000

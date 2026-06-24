@@ -37,9 +37,37 @@ def has_document_result_id(text: str | None) -> bool:
         return False
     parts = [part for part in re.split(r"[_\W]+", text.lower()) if part]
     for idx, part in enumerate(parts):
-        if part in RESULT_KINDS and any(next_part[:1].isdigit() for next_part in parts[idx + 1 : idx + 4]):
+        if part in RESULT_KINDS and _looks_like_result_number(
+            parts[idx + 1 :],
+            allow_single_number_suffix=part != "conjecture",
+        ):
             return True
     return False
+
+
+def _looks_like_result_number(parts: list[str], *, allow_single_number_suffix: bool) -> bool:
+    """Match paper-local result numbers without rejecting named concepts.
+
+    Local result ids usually encode labels like ``lemma_2_40`` or
+    ``theorem_a_1``.  A single dimension token in a named concept, such as
+    ``smale_conjecture_3_manifolds``, should remain valid.
+    """
+    if not parts:
+        return False
+    first = parts[0]
+    if _looks_like_result_number_token(first):
+        return (
+            len(parts) == 1
+            or (len(parts) > 1 and _looks_like_result_number_token(parts[1]))
+            or allow_single_number_suffix
+        )
+    if re.fullmatch(r"[a-z]|[ivxlcdm]+", first) and len(parts) > 1:
+        return _looks_like_result_number_token(parts[1])
+    return False
+
+
+def _looks_like_result_number_token(part: str) -> bool:
+    return bool(re.fullmatch(r"\d+[a-z]?", part))
 
 
 def concept_node_exclusion_reason(node: dict[str, Any]) -> str | None:

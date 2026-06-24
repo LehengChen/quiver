@@ -1,6 +1,6 @@
 # Quiver Project Tree
 
-Quiver is split into a Python extraction harness, a static React presentation app, durable improvement notes, and a public example site for GitHub Pages.
+Quiver is split into a Python extraction harness, a static React presentation app, durable improvement notes, and public example sites for GitHub Pages.
 
 ```text
 quiver/
@@ -34,7 +34,14 @@ quiver/
     items/             # durable improvement records
 
   examples/
-    site/              # checked-in GitHub Pages static output
+    pages/             # GitHub Pages publish root
+      index.html       # public example directory
+      geometric-analysis-narrow-v1/
+        graph.json
+        analysis.json
+        collections.json
+        manifest.json
+        assets/
 ```
 
 The visualization is intended for readers exploring a concept collection, not for exposing implementation internals. Pipeline/run metadata is kept as supporting data, while the main UI emphasizes concepts, dependency links, evidence, and paper-level context.

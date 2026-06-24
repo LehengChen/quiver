@@ -144,6 +144,14 @@
       "severity": "medium",
       "category": "schema",
       "path": "items/QI-0018.json"
+    },
+    {
+      "id": "QI-0019",
+      "title": "Report live active-paper elapsed time in run monitor",
+      "status": "proposed",
+      "severity": "low",
+      "category": "observability",
+      "path": "items/QI-0019.json"
     }
   ]
 }

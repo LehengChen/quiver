@@ -61,6 +61,47 @@ def test_validate_delta_rejects_numbered_result_node_identity() -> None:
     assert any(issue["severity"] == "error" and "paper-local numbered" in issue["message"] for issue in issues)
 
 
+def test_validate_delta_allows_named_conjecture_with_dimension() -> None:
+    delta = {
+        "schema_version": "quiver.graph_delta.v1",
+        "paper_id": "paper",
+        "paper_title": "Paper",
+        "nodes": [
+            _node(
+                canonical_id="generalized_smale_conjecture_3_manifolds",
+                label="Generalized Smale Conjecture for 3-manifolds",
+            )
+        ],
+        "edges": [],
+        "notes": [],
+    }
+
+    issues = validate_delta(delta)
+
+    assert not any(issue["severity"] == "error" and "paper-local numbered" in issue["message"] for issue in issues)
+
+
+def test_validate_delta_rejects_appendix_and_roman_result_node_ids() -> None:
+    for canonical_id in [
+        "lemma_2_regular_case",
+        "lemma_2_1a_regular_case",
+        "theorem_a_1b_extension",
+        "proposition_ii_3b_boundary_case",
+    ]:
+        delta = {
+            "schema_version": "quiver.graph_delta.v1",
+            "paper_id": "paper",
+            "paper_title": "Paper",
+            "nodes": [_node(canonical_id=canonical_id, label="Reusable concept")],
+            "edges": [],
+            "notes": [],
+        }
+
+        issues = validate_delta(delta)
+
+        assert any(issue["severity"] == "error" and "paper-local numbered" in issue["message"] for issue in issues)
+
+
 def test_search_filters_existing_numbered_result_nodes(tmp_path: Path) -> None:
     root = tmp_path / "search-quality"
     init_project(root)

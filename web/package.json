@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "site:example": "cd .. && python -m http.server 4173 -d examples/site",
+    "site:example": "cd .. && python -m http.server 4173 -d examples/pages",
     "test:e2e": "playwright test",
     "visual:check": "playwright test e2e/graph.visual.spec.ts"
   },

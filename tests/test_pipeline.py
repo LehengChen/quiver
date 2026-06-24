@@ -116,6 +116,49 @@ def test_ingest_package_search_extract_merge_site(tmp_path: Path) -> None:
     assert status(root)["nodes"] == 2
 
 
+def test_paper_metadata_sidecar_is_publicly_sanitized(tmp_path: Path) -> None:
+    root = tmp_path / "metadata-demo"
+    init_project(root)
+    (root / "sources" / "papers" / "MR1234567.md").write_text("# Placeholder Title\n\nA concept.", encoding="utf-8")
+    append_jsonl(
+        root / "sources" / "paper_metadata.jsonl",
+        {
+            "paper_id": "MR1234567",
+            "title": "Metadata Title",
+            "authors": ["Doe, Jane"],
+            "journal": "Invent. Math.",
+            "year": 2024,
+            "primary_msc": "53C21",
+            "primary_msc_description": "Riemannian geometry",
+            "doi": "10.0000/example",
+            "source_local_path": "/not/public/MR1234567.md",
+        },
+    )
+    index = scan_papers(root)
+    paper = index["papers"][0]
+    assert paper["id"] == "mr1234567"
+    assert paper["title"] == "Metadata Title"
+    assert paper["journal"] == "Invent. Math."
+    assert "source_local_path" not in paper
+
+    write_json(
+        root / "results" / "deltas" / "mr1234567.json",
+        {
+            "schema_version": "quiver.graph_delta.v1",
+            "paper_id": "mr1234567",
+            "paper_title": "Metadata Title",
+            "nodes": [],
+            "edges": [],
+            "notes": [],
+        },
+    )
+    graph = merge_deltas(root)
+    assert graph["papers"][0]["authors"] == ["Doe, Jane"]
+    assert graph["papers"][0]["primary_msc"] == "53C21"
+    assert "path" not in graph["papers"][0]
+    assert "sha256" not in graph["papers"][0]
+
+
 def test_site_analysis_warning_counts_are_self_contained(tmp_path: Path) -> None:
     root = tmp_path / "site-analysis"
     init_project(root)

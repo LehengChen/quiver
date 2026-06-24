@@ -33,7 +33,7 @@ manifest.json
 For local review:
 
 ```bash
-python -m http.server 4173 -d examples/site
+python -m http.server 4173 -d examples/pages
 ```
 
 Then open:
@@ -41,6 +41,17 @@ Then open:
 ```text
 http://localhost:4173/
 ```
+
+Example sites are stored as standalone subdirectories under:
+
+```text
+examples/pages/
+  index.html
+  geometric-analysis-narrow-v1/
+```
+
+GitHub Pages publishes `examples/pages`, so individual examples are available
+under paths such as `/quiver/geometric-analysis-narrow-v1/`.
 
 The app uses hash routes, so GitHub Pages does not need a server-side fallback.
 
@@ -52,4 +63,4 @@ npx playwright install --with-deps chromium
 npm run visual:check
 ```
 
-The checks open `examples/site` with Playwright on desktop and mobile viewports, verify graph counts against `graph.json`, confirm hub nodes have visible size variation, save screenshots as test artifacts, and exercise node selection rollback.
+The checks open the checked-in geometric analysis example with Playwright on desktop and mobile viewports, verify graph counts against `graph.json`, confirm hub nodes have visible size variation, save screenshots as test artifacts, and exercise node selection rollback.

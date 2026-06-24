@@ -11,6 +11,23 @@ export interface EvidenceSpan {
 export interface Paper {
   id: string;
   title: string;
+  mrnumber?: number;
+  authors?: string[];
+  doi?: string;
+  doi_url?: string;
+  journal?: string;
+  year?: number;
+  volume?: string;
+  number?: string;
+  pages?: string;
+  page_count_estimate?: number;
+  primary_msc?: string;
+  primary_msc_description?: string;
+  citation_count?: number;
+  item_type?: string;
+  entry_type?: string;
+  selection_tags?: string[];
+  topic_selection?: string;
 }
 
 export interface ConceptNode {
