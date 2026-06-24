@@ -1,0 +1,15 @@
+{
+  "schema_version": "quiver.site_collections.v1",
+  "title": "Top-4 Geometric Analysis (Narrow)",
+  "generated_at": "2026-06-24T05:29:15.068522Z",
+  "collections": [
+    {
+      "id": "top4-geometric-analysis-narrow-v1",
+      "project_id": "top4-geometric-analysis-narrow-v1",
+      "title": "Top-4 Geometric Analysis (Narrow)",
+      "graph": "graph.json",
+      "analysis": "analysis.json",
+      "manifest": "manifest.json"
+    }
+  ]
+}

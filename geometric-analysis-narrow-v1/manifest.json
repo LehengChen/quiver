@@ -1,8 +1,8 @@
 {
   "schema_version": "quiver.site_manifest.v1",
-  "project_id": "ag95-diverse-strict-v1",
-  "title": "ag95-diverse-strict-v1",
-  "generated_at": "2026-06-23T07:50:47.369077Z",
+  "project_id": "top4-geometric-analysis-narrow-v1",
+  "title": "Top-4 Geometric Analysis (Narrow)",
+  "generated_at": "2026-06-24T05:29:14.806065Z",
   "source_graph": "results/normalized/concept_graph.json",
   "files": [
     "analysis.json",

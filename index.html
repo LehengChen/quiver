@@ -3,11 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiver Concept Map</title>
-    <script type="module" crossorigin src="./assets/index-XQq29Pzn.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Cza0cxxv.css">
+    <title>Quiver Examples</title>
+    <style>
+      :root {
+        color: #1f2933;
+        background: #ffffff;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        box-sizing: border-box;
+        width: min(920px, 100%);
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 32px;
+        line-height: 1.15;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 0 0 32px;
+        max-width: 680px;
+        color: #52606d;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .examples {
+        display: grid;
+        gap: 14px;
+      }
+
+      a {
+        display: block;
+        border: 1px solid #d9e2ec;
+        border-radius: 8px;
+        padding: 18px 20px;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus,
+      a:hover {
+        border-color: #9fb3c8;
+        background: #f8fafc;
+      }
+
+      strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 17px;
+      }
+
+      span {
+        color: #627d98;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <main>
+      <h1>Quiver Examples</h1>
+      <p>
+        Static concept dependency maps generated from paper collections. Each example is a
+        standalone GitHub Pages-ready site.
+      </p>
+      <div class="examples">
+        <a href="./geometric-analysis-narrow-v1/">
+          <strong>Top-4 Geometric Analysis</strong>
+          <span>71 papers, 1,883 concepts, 3,260 dependencies</span>
+        </a>
+      </div>
+    </main>
   </body>
 </html>

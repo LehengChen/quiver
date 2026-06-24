@@ -1,0 +1,4477 @@
+{
+  "schema_version": "quiver.site_analysis.v1",
+  "generated_at": "2026-06-24T05:29:14.806065Z",
+  "summary": {
+    "papers": 71,
+    "concepts": 1883,
+    "dependencies": 3260,
+    "concepts_needing_context": 177,
+    "reused_concepts": 95,
+    "overlapping_concepts": 61,
+    "evidence_warnings": 1108
+  },
+  "counts": {
+    "relations": [
+      {
+        "key": "definition_depends_on",
+        "count": 1897
+      },
+      {
+        "key": "uses_method",
+        "count": 427
+      },
+      {
+        "key": "constructed_using",
+        "count": 275
+      },
+      {
+        "key": "specializes",
+        "count": 264
+      },
+      {
+        "key": "has_property",
+        "count": 243
+      },
+      {
+        "key": "computed_by",
+        "count": 89
+      },
+      {
+        "key": "belongs_to_topic",
+        "count": 42
+      },
+      {
+        "key": "has_primitive",
+        "count": 23
+      }
+    ],
+    "entity_types": [
+      {
+        "key": "definition",
+        "count": 645
+      },
+      {
+        "key": "property",
+        "count": 469
+      },
+      {
+        "key": "object",
+        "count": 378
+      },
+      {
+        "key": "method",
+        "count": 257
+      },
+      {
+        "key": "notation",
+        "count": 92
+      },
+      {
+        "key": "primitive",
+        "count": 22
+      },
+      {
+        "key": "topic",
+        "count": 20
+      }
+    ],
+    "local_roles": [
+      {
+        "key": "supporting",
+        "count": 850
+      },
+      {
+        "key": "main",
+        "count": 673
+      },
+      {
+        "key": "background",
+        "count": 200
+      },
+      {
+        "key": "frontier",
+        "count": 160
+      }
+    ],
+    "adequacy": [
+      {
+        "key": "adequate",
+        "count": 1706
+      },
+      {
+        "key": "needs_one_layer",
+        "count": 164
+      },
+      {
+        "key": "unclear",
+        "count": 13
+      }
+    ],
+    "confidence": [
+      {
+        "key": "high",
+        "count": 1645
+      },
+      {
+        "key": "medium",
+        "count": 229
+      },
+      {
+        "key": "low",
+        "count": 9
+      }
+    ]
+  },
+  "paper_summaries": [
+    {
+      "id": "mr4199444",
+      "title": "Index of minimal spheres and isoperimetric eigenvalue inequalities",
+      "concepts": 38,
+      "unique_concepts": 36,
+      "reused_concepts": 2,
+      "dependency_links": 74,
+      "evidence_warnings": 14,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4199730",
+      "title": "$L^2$ curvature bounds on manifolds with bounded Ricci curvature",
+      "concepts": 25,
+      "unique_concepts": 11,
+      "reused_concepts": 14,
+      "dependency_links": 27,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4213771",
+      "title": "Minimal submanifolds from the abelian Higgs model",
+      "concepts": 30,
+      "unique_concepts": 29,
+      "reused_concepts": 1,
+      "dependency_links": 51,
+      "evidence_warnings": 36,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4226910",
+      "title": "Rectifiability of singular sets of noncollapsed limit spaces with Ricci curvature bounded below",
+      "concepts": 34,
+      "unique_concepts": 18,
+      "reused_concepts": 16,
+      "dependency_links": 53,
+      "evidence_warnings": 2,
+      "concepts_needing_context": 13
+    },
+    {
+      "id": "mr4228500",
+      "title": "New curvature conditions for the Bochner technique",
+      "concepts": 19,
+      "unique_concepts": 18,
+      "reused_concepts": 1,
+      "dependency_links": 29,
+      "evidence_warnings": 28,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4228502",
+      "title": "Constant mean curvature spheres in homogeneous three-manifolds",
+      "concepts": 33,
+      "unique_concepts": 28,
+      "reused_concepts": 5,
+      "dependency_links": 45,
+      "evidence_warnings": 9,
+      "concepts_needing_context": 7
+    },
+    {
+      "id": "mr4270664",
+      "title": "Reflexive sheaves, Hermitian-Yang-Mills connections, and tangent cones",
+      "concepts": 32,
+      "unique_concepts": 32,
+      "reused_concepts": 0,
+      "dependency_links": 53,
+      "evidence_warnings": 33,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4276284",
+      "title": "Local and global boundary rigidity and the geodesic X-ray transform in the normal gauge",
+      "concepts": 21,
+      "unique_concepts": 19,
+      "reused_concepts": 2,
+      "dependency_links": 32,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4276285",
+      "title": "A proof of Carleson's $\\varepsilon^2$-conjecture",
+      "concepts": 26,
+      "unique_concepts": 23,
+      "reused_concepts": 3,
+      "dependency_links": 30,
+      "evidence_warnings": 43,
+      "concepts_needing_context": 7
+    },
+    {
+      "id": "mr4280868",
+      "title": "The isoperimetric inequality for a minimal submanifold in Euclidean space",
+      "concepts": 23,
+      "unique_concepts": 23,
+      "reused_concepts": 0,
+      "dependency_links": 46,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4285137",
+      "title": "Regularity of the free boundary for the two-phase Bernoulli problem",
+      "concepts": 14,
+      "unique_concepts": 12,
+      "reused_concepts": 2,
+      "dependency_links": 17,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4285141",
+      "title": "The J-equation and the supercritical deformed Hermitian-Yang-Mills equation",
+      "concepts": 32,
+      "unique_concepts": 30,
+      "reused_concepts": 2,
+      "dependency_links": 53,
+      "evidence_warnings": 78,
+      "concepts_needing_context": 7
+    },
+    {
+      "id": "mr4301557",
+      "title": "On the constant scalar curvature Kähler metrics (I)—A priori estimates",
+      "concepts": 12,
+      "unique_concepts": 8,
+      "reused_concepts": 4,
+      "dependency_links": 15,
+      "evidence_warnings": 8,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4301558",
+      "title": "On the constant scalar curvature Kähler metrics (II)—Existence results",
+      "concepts": 34,
+      "unique_concepts": 25,
+      "reused_concepts": 9,
+      "dependency_links": 62,
+      "evidence_warnings": 25,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4309491",
+      "title": "The globalization theorem for the curvature-dimension condition",
+      "concepts": 28,
+      "unique_concepts": 24,
+      "reused_concepts": 4,
+      "dependency_links": 42,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 5
+    },
+    {
+      "id": "mr4309496",
+      "title": "Rigidity of Riemannian embeddings of discrete metric spaces",
+      "concepts": 26,
+      "unique_concepts": 22,
+      "reused_concepts": 4,
+      "dependency_links": 44,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4322390",
+      "title": "The conformal group of a compact simply connected Lorentzian manifold",
+      "concepts": 35,
+      "unique_concepts": 35,
+      "reused_concepts": 0,
+      "dependency_links": 56,
+      "evidence_warnings": 7,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4322391",
+      "title": "Nilpotent structures and collapsing Ricci-flat metrics on the K3 surface",
+      "concepts": 30,
+      "unique_concepts": 21,
+      "reused_concepts": 9,
+      "dependency_links": 41,
+      "evidence_warnings": 2,
+      "concepts_needing_context": 9
+    },
+    {
+      "id": "mr4323635",
+      "title": "Limit lamination theorem for H-disks",
+      "concepts": 19,
+      "unique_concepts": 16,
+      "reused_concepts": 3,
+      "dependency_links": 37,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4323639",
+      "title": "Uniqueness of compact ancient solutions to three-dimensional Ricci flow",
+      "concepts": 28,
+      "unique_concepts": 25,
+      "reused_concepts": 3,
+      "dependency_links": 42,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 5
+    },
+    {
+      "id": "mr4334189",
+      "title": "A variational approach to the Yau-Tian-Donaldson conjecture",
+      "concepts": 29,
+      "unique_concepts": 24,
+      "reused_concepts": 5,
+      "dependency_links": 41,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4334976",
+      "title": "Global regularity for the Monge-Ampère equation with natural boundary condition",
+      "concepts": 20,
+      "unique_concepts": 20,
+      "reused_concepts": 0,
+      "dependency_links": 30,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4337975",
+      "title": "Large Steklov eigenvalues via homogenisation on manifolds",
+      "concepts": 37,
+      "unique_concepts": 34,
+      "reused_concepts": 3,
+      "dependency_links": 59,
+      "evidence_warnings": 37,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4358414",
+      "title": "The Gaussian double-bubble and multi-bubble conjectures",
+      "concepts": 19,
+      "unique_concepts": 19,
+      "reused_concepts": 0,
+      "dependency_links": 30,
+      "evidence_warnings": 28,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4359475",
+      "title": "Geometry of 1-codimensional measures in Heisenberg groups",
+      "concepts": 16,
+      "unique_concepts": 14,
+      "reused_concepts": 2,
+      "dependency_links": 26,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4366415",
+      "title": "Gravitational instantons with faster than quadratic curvature decay. I",
+      "concepts": 39,
+      "unique_concepts": 37,
+      "reused_concepts": 2,
+      "dependency_links": 62,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 8
+    },
+    {
+      "id": "mr4372222",
+      "title": "$G$-uniform stability and Kähler-Einstein metrics on Fano varieties",
+      "concepts": 28,
+      "unique_concepts": 25,
+      "reused_concepts": 3,
+      "dependency_links": 47,
+      "evidence_warnings": 55,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4374954",
+      "title": "Control of eigenfunctions on surfaces of variable curvature",
+      "concepts": 24,
+      "unique_concepts": 20,
+      "reused_concepts": 4,
+      "dependency_links": 42,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4392462",
+      "title": "Correction to: A polyhedron comparison theorem for 3-manifolds with positive scalar curvature",
+      "concepts": 16,
+      "unique_concepts": 12,
+      "reused_concepts": 4,
+      "dependency_links": 23,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4411732",
+      "title": "Boundary regularity and stability for spaces with Ricci bounded below",
+      "concepts": 33,
+      "unique_concepts": 27,
+      "reused_concepts": 6,
+      "dependency_links": 51,
+      "evidence_warnings": 74,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4438353",
+      "title": "Lorentzian Calderón problem under curvature bounds",
+      "concepts": 33,
+      "unique_concepts": 33,
+      "reused_concepts": 0,
+      "dependency_links": 58,
+      "evidence_warnings": 30,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4438354",
+      "title": "Ancient asymptotically cylindrical flows and applications",
+      "concepts": 25,
+      "unique_concepts": 11,
+      "reused_concepts": 14,
+      "dependency_links": 39,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4438356",
+      "title": "The Ruelle zeta function at zero for nearly hyperbolic 3-manifolds",
+      "concepts": 25,
+      "unique_concepts": 22,
+      "reused_concepts": 3,
+      "dependency_links": 34,
+      "evidence_warnings": 14,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4438357",
+      "title": "Strong Sard conjecture and regularity of singular minimizing geodesics for analytic sub-Riemannian structures in dimension 3",
+      "concepts": 36,
+      "unique_concepts": 35,
+      "reused_concepts": 1,
+      "dependency_links": 55,
+      "evidence_warnings": 19,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4448680",
+      "title": "Uniqueness and stability of Ricci flow through singularities",
+      "concepts": 28,
+      "unique_concepts": 22,
+      "reused_concepts": 6,
+      "dependency_links": 57,
+      "evidence_warnings": 8,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4448681",
+      "title": "Ancient low-entropy flows, mean-convex neighborhoods, and uniqueness",
+      "concepts": 46,
+      "unique_concepts": 29,
+      "reused_concepts": 17,
+      "dependency_links": 83,
+      "evidence_warnings": 27,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4460594",
+      "title": "Foliated corona decompositions",
+      "concepts": 27,
+      "unique_concepts": 25,
+      "reused_concepts": 2,
+      "dependency_links": 42,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 11
+    },
+    {
+      "id": "mr4480147",
+      "title": "Large genus asymptotic geometry of random square-tiled surfaces and of random multicurves",
+      "concepts": 31,
+      "unique_concepts": 31,
+      "reused_concepts": 0,
+      "dependency_links": 44,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 10
+    },
+    {
+      "id": "mr4480150",
+      "title": "Rigidity estimates for isometric and conformal maps from $\\Bbb{S}^{n-1}$ to $\\Bbb R^n$",
+      "concepts": 37,
+      "unique_concepts": 37,
+      "reused_concepts": 0,
+      "dependency_links": 74,
+      "evidence_warnings": 46,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4493323",
+      "title": "Regularity for graphs with bounded anisotropic mean curvature",
+      "concepts": 38,
+      "unique_concepts": 38,
+      "reused_concepts": 0,
+      "dependency_links": 70,
+      "evidence_warnings": 55,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4502596",
+      "title": "One can hear the shape of ellipses of small eccentricity",
+      "concepts": 30,
+      "unique_concepts": 30,
+      "reused_concepts": 0,
+      "dependency_links": 43,
+      "evidence_warnings": 4,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4506771",
+      "title": "Characterising rectifiable metric spaces using tangent spaces",
+      "concepts": 16,
+      "unique_concepts": 13,
+      "reused_concepts": 3,
+      "dependency_links": 17,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 5
+    },
+    {
+      "id": "mr4506773",
+      "title": "Degenerating Kähler-Einstein cones, locally symmetric cusps, and the Tian-Yau metric",
+      "concepts": 25,
+      "unique_concepts": 22,
+      "reused_concepts": 3,
+      "dependency_links": 42,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 5
+    },
+    {
+      "id": "mr4506774",
+      "title": "Critical points of the Moser-Trudinger functional on closed surfaces",
+      "concepts": 23,
+      "unique_concepts": 22,
+      "reused_concepts": 1,
+      "dependency_links": 45,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4536904",
+      "title": "Ricci flow and diffeomorphism groups of 3-manifolds",
+      "concepts": 30,
+      "unique_concepts": 24,
+      "reused_concepts": 6,
+      "dependency_links": 55,
+      "evidence_warnings": 60,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4564260",
+      "title": "Existence of infinitely many minimal hypersurfaces in closed manifolds",
+      "concepts": 45,
+      "unique_concepts": 41,
+      "reused_concepts": 4,
+      "dependency_links": 68,
+      "evidence_warnings": 2,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4583772",
+      "title": "Non-compact Einstein manifolds with symmetry",
+      "concepts": 40,
+      "unique_concepts": 38,
+      "reused_concepts": 2,
+      "dependency_links": 62,
+      "evidence_warnings": 25,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4588565",
+      "title": "Weyl remainders: an application of geodesic beams",
+      "concepts": 25,
+      "unique_concepts": 22,
+      "reused_concepts": 3,
+      "dependency_links": 42,
+      "evidence_warnings": 3,
+      "concepts_needing_context": 8
+    },
+    {
+      "id": "mr4593734",
+      "title": "On $L^\\infty$ estimates for complex Monge-Ampère equations",
+      "concepts": 18,
+      "unique_concepts": 17,
+      "reused_concepts": 1,
+      "dependency_links": 28,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4601997",
+      "title": "Quasicircles and quasiperiodic surfaces in pseudo-hyperbolic spaces",
+      "concepts": 22,
+      "unique_concepts": 21,
+      "reused_concepts": 1,
+      "dependency_links": 31,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 6
+    },
+    {
+      "id": "mr4601998",
+      "title": "Arithmeticity, superrigidity and totally geodesic submanifolds of complex hyperbolic manifolds",
+      "concepts": 23,
+      "unique_concepts": 23,
+      "reused_concepts": 0,
+      "dependency_links": 35,
+      "evidence_warnings": 9,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4602001",
+      "title": "No semistability at infinity for Calabi-Yau metrics asymptotic to cones",
+      "concepts": 38,
+      "unique_concepts": 36,
+      "reused_concepts": 2,
+      "dependency_links": 63,
+      "evidence_warnings": 60,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4623543",
+      "title": "Compactness theory of the space of super Ricci flows",
+      "concepts": 32,
+      "unique_concepts": 27,
+      "reused_concepts": 5,
+      "dependency_links": 62,
+      "evidence_warnings": 2,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4635304",
+      "title": "Near optimal spectral gaps for hyperbolic surfaces",
+      "concepts": 28,
+      "unique_concepts": 26,
+      "reused_concepts": 2,
+      "dependency_links": 48,
+      "evidence_warnings": 3,
+      "concepts_needing_context": 6
+    },
+    {
+      "id": "mr4635832",
+      "title": "Pólya's conjecture for Euclidean balls",
+      "concepts": 25,
+      "unique_concepts": 25,
+      "reused_concepts": 0,
+      "dependency_links": 38,
+      "evidence_warnings": 2,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4660135",
+      "title": "Regularity of minimal surfaces near quadratic cones",
+      "concepts": 28,
+      "unique_concepts": 26,
+      "reused_concepts": 2,
+      "dependency_links": 43,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4683373",
+      "title": "Correction to ``On the geometry of metric measure spaces. I''",
+      "concepts": 20,
+      "unique_concepts": 15,
+      "reused_concepts": 5,
+      "dependency_links": 34,
+      "evidence_warnings": 38,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4688704",
+      "title": "The anisotropic Bernstein problem",
+      "concepts": 28,
+      "unique_concepts": 27,
+      "reused_concepts": 1,
+      "dependency_links": 45,
+      "evidence_warnings": 26,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4689374",
+      "title": "Scalar curvature rigidity of convex polytopes",
+      "concepts": 21,
+      "unique_concepts": 19,
+      "reused_concepts": 2,
+      "dependency_links": 29,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4695505",
+      "title": "The singular set in the Stefan problem",
+      "concepts": 20,
+      "unique_concepts": 19,
+      "reused_concepts": 1,
+      "dependency_links": 31,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4701879",
+      "title": "${\\rm CAT}(0)$ spaces of higher rank II",
+      "concepts": 51,
+      "unique_concepts": 51,
+      "reused_concepts": 0,
+      "dependency_links": 94,
+      "evidence_warnings": 17,
+      "concepts_needing_context": 6
+    },
+    {
+      "id": "mr4701880",
+      "title": "The time-like minimal surface equation in Minkowski space: low regularity solutions",
+      "concepts": 26,
+      "unique_concepts": 26,
+      "reused_concepts": 0,
+      "dependency_links": 50,
+      "evidence_warnings": 21,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4713021",
+      "title": "Generalized soap bubbles and the topology of manifolds with positive scalar curvature",
+      "concepts": 22,
+      "unique_concepts": 16,
+      "reused_concepts": 6,
+      "dependency_links": 31,
+      "evidence_warnings": 3,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4728241",
+      "title": "Existence of harmonic maps and eigenvalue optimization in higher dimensions",
+      "concepts": 31,
+      "unique_concepts": 30,
+      "reused_concepts": 1,
+      "dependency_links": 52,
+      "evidence_warnings": 7,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4736529",
+      "title": "A structure theory for stable codimension 1 integral varifolds with applications to area minimising hypersurfaces ${\\rm mod}\\,p$",
+      "concepts": 26,
+      "unique_concepts": 25,
+      "reused_concepts": 1,
+      "dependency_links": 40,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4743516",
+      "title": "$L^2$-cohomology of quasi-fibered boundary metrics",
+      "concepts": 33,
+      "unique_concepts": 33,
+      "reused_concepts": 0,
+      "dependency_links": 56,
+      "evidence_warnings": 14,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4756990",
+      "title": "Mean curvature flow with generic initial data",
+      "concepts": 38,
+      "unique_concepts": 30,
+      "reused_concepts": 8,
+      "dependency_links": 74,
+      "evidence_warnings": 77,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4768633",
+      "title": "On ends of finite-volume noncompact manifolds of nonpositive curvature",
+      "concepts": 36,
+      "unique_concepts": 34,
+      "reused_concepts": 2,
+      "dependency_links": 48,
+      "evidence_warnings": 3,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4816632",
+      "title": "Collapsing geometry of hyperkähler 4-manifolds and applications",
+      "concepts": 42,
+      "unique_concepts": 35,
+      "reused_concepts": 7,
+      "dependency_links": 67,
+      "evidence_warnings": 22,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4816633",
+      "title": "Stable minimal hypersurfaces in ${\\bf R}^4$",
+      "concepts": 30,
+      "unique_concepts": 27,
+      "reused_concepts": 3,
+      "dependency_links": 51,
+      "evidence_warnings": 7,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4824733",
+      "title": "Mean curvature flow from conical singularities",
+      "concepts": 22,
+      "unique_concepts": 18,
+      "reused_concepts": 4,
+      "dependency_links": 44,
+      "evidence_warnings": 18,
+      "concepts_needing_context": 0
+    }
+  ],
+  "frontier_nodes": [
+    {
+      "id": "ale_gravitational_instanton_end",
+      "label": "ALE gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "alf_dk_gravitational_instanton",
+      "label": "ALF-D_k gravitational instanton",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alf_gravitational_instanton_end",
+      "label": "ALF gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alg_gravitational_instanton_end",
+      "label": "ALG gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alh_gravitational_instanton_end",
+      "label": "ALH gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alh_non_splitting_instanton",
+      "label": "ALH non-splitting instanton",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "almost_near_points_in_cat_one_space",
+      "label": "Almost near points in a CAT(1) space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "almost_properly_embedded_free_boundary_minimal_hypersurface",
+      "label": "almost properly embedded free boundary minimal hypersurface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4564260"
+      ]
+    },
+    {
+      "id": "analytic_subvariety",
+      "label": "Analytic subvariety",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "ancient_oval_mean_curvature_flow",
+      "label": "Ancient oval mean curvature flow",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "approximate_lipschitz_graph",
+      "label": "Approximate Lipschitz graph",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "approximate_metric",
+      "label": "Approximate metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "arithmetic_lattice",
+      "label": "Arithmetic lattice",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601998"
+      ]
+    },
+    {
+      "id": "asymptotic_to_standard_metric_order_epsilon",
+      "label": "Asymptotic to the standard metric of order epsilon",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "automorphic_kernel_for_hyperbolic_surface",
+      "label": "Automorphic kernel for a hyperbolic surface",
+      "reason": "needs one more layer; low confidence",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "ball_quotient_asymptotics_of_conical_ke_metrics",
+      "label": "Ball quotient asymptotics of conical Kähler-Einstein metrics",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "bessel_zero_spectral_decomposition_of_euclidean_ball",
+      "label": "Bessel-zero spectral decomposition of the Euclidean ball",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635832"
+      ]
+    },
+    {
+      "id": "buser_burger_dodziuk_handle_compactification",
+      "label": "Buser-Burger-Dodziuk handle compactification",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "c1_plus_regular_stable_unstable_foliations",
+      "label": "C^{1+} regularity of stable and unstable foliations",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4374954"
+      ]
+    },
+    {
+      "id": "calabi_ansatz",
+      "label": "Calabi ansatz",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "calabi_ansatz_background_metric",
+      "label": "Calabi ansatz background metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "cd1_condition",
+      "label": "CD^1 condition",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4309491"
+      ]
+    },
+    {
+      "id": "closed_positive_11_current",
+      "label": "Closed positive (1,1)-current",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "cmc_flux",
+      "label": "CMC flux",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "coarse_excess_for_varifold",
+      "label": "Coarse excess for a varifold",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736529"
+      ]
+    },
+    {
+      "id": "cocompact_action",
+      "label": "Cocompact action",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "compactness_quantization_for_subcritical_moser_trudinger_critical_points",
+      "label": "Compactness and quantization for subcritical Moser-Trudinger critical points",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4506774"
+      ]
+    },
+    {
+      "id": "complete_locally_homogeneous_three_manifold",
+      "label": "Complete locally homogeneous three-manifold",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "cross_ratio_for_einstein_universe",
+      "label": "Cross-ratio for the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "cusp_parametrix_for_hyperbolic_surface_laplacian",
+      "label": "Cusp parametrix for the hyperbolic surface Laplacian",
+      "reason": "needs one more layer; low confidence",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "cylindrical_end_self_shrinker",
+      "label": "Self-shrinker with cylindrical end",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4756990"
+      ]
+    },
+    {
+      "id": "cylindrical_region_of_rotationally_symmetric_ancient_solution",
+      "label": "Cylindrical region of a rotationally symmetric ancient solution",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4323639"
+      ]
+    },
+    {
+      "id": "density_change_of_variables_for_wasserstein_geodesics",
+      "label": "Density change-of-variables formula for Wasserstein geodesics",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4309491"
+      ]
+    },
+    {
+      "id": "div_curl_differential_inclusion",
+      "label": "Div-curl differential inclusion",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4493323"
+      ]
+    },
+    {
+      "id": "egorov_theorem_up_to_local_ehrenfest_time",
+      "label": "Egorov theorem up to local Ehrenfest time",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4374954"
+      ]
+    },
+    {
+      "id": "entropy_pinching",
+      "label": "Entropy pinching",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "epsilon_bi_holder_equivalence",
+      "label": "epsilon-bi-Holder equivalence",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "epsilon_regulariy_for_two_sided_ricci_bounds",
+      "label": "epsilon-regularity for two-sided Ricci bounds",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "euclidean_building",
+      "label": "Euclidean building",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "extended_monotone_set_in_heisenberg_group",
+      "label": "Extended monotone set in the Heisenberg group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "extended_nonmonotonicity",
+      "label": "Extended non-monotonicity",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "extremal_kahler_metric",
+      "label": "Extremal Kähler metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "fiber_pushforward_on_sphere_bundle",
+      "label": "Fiber pushforward on a sphere bundle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4438356"
+      ]
+    },
+    {
+      "id": "fine_excess_for_varifold",
+      "label": "Fine excess for a varifold",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736529"
+      ]
+    },
+    {
+      "id": "finite_order_boundary_contact_for_null_geodesics",
+      "label": "Finite order boundary contact for null geodesics",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4438353"
+      ]
+    },
+    {
+      "id": "first_variation_under_conformal_metric_perturbation",
+      "label": "First variation under conformal metric perturbation",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4438356"
+      ]
+    },
+    {
+      "id": "foliated_patchwork",
+      "label": "Foliated patchwork",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "fractal_uncertainty_principle",
+      "label": "Fractal uncertainty principle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4374954"
+      ]
+    },
+    {
+      "id": "fractal_venetian_blinds_surface_construction",
+      "label": "Fractal Venetian blinds surface construction",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "free_boundary_minimal_hypersurface",
+      "label": "free boundary minimal hypersurface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4564260"
+      ]
+    },
+    {
+      "id": "fully_nonlinear_elliptic_a_priori_estimates",
+      "label": "Fully nonlinear elliptic a priori estimates",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "gamma_structural_condition_for_kahler_eigenvalue_operators",
+      "label": "Gamma structural condition for Kähler eigenvalue operators",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "generalized_pollicott_ruelle_resonant_forms_at_zero",
+      "label": "Generalized Pollicott-Ruelle resonant forms at zero",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4438356"
+      ]
+    },
+    {
+      "id": "generalized_volume_minimization_for_k_semistable_valuations",
+      "label": "Generalized volume minimization for K-semistable valuations",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "geometric_transformation_method",
+      "label": "Geometric transformation method",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "gibbons_hawking_ansatz",
+      "label": "Gibbons-Hawking ansatz",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "gluing_with_tian_yau_metric",
+      "label": "Gluing with the Tian-Yau metric",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "harmonic_epsilon_splitting_function",
+      "label": "Harmonic epsilon-splitting function",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "heat_kernel_estimates_and_convergence",
+      "label": "Heat kernel estimates and convergence",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "heisenberg_kinematic_formula",
+      "label": "Kinematic formula for Heisenberg lines",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "horizontal_killing_field_in_semidirect_product",
+      "label": "Horizontal Killing field in a semidirect product",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "hyperbolic_parametrix",
+      "label": "Hyperbolic parametrix",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4374954"
+      ]
+    },
+    {
+      "id": "interior_parametrix_on_hyperbolic_plane",
+      "label": "Interior parametrix on the hyperbolic plane",
+      "reason": "needs one more layer; low confidence",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "intrinsic_graph_in_heisenberg_group",
+      "label": "Intrinsic graph in the Heisenberg group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "invariant_limit_surface_of_index_one_spheres",
+      "label": "Invariant limit surface of index-one spheres",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "j_stability_numerical_invariant",
+      "label": "J-stability numerical invariant",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "k_polystable_fano_cone",
+      "label": "K-polystable Fano cone",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "k_semistable_fano_cone",
+      "label": "K-semistable Fano cone",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "kahler_cohomology_class",
+      "label": "Kähler cohomology class",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "kahler_metric",
+      "label": "Kähler metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4285141",
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "kahler_test_configuration",
+      "label": "Kähler test configuration",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "kuznecov_sum",
+      "label": "Kuznecov sum",
+      "reason": "needs one more layer; low confidence; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "kuznecov_sum_improvement_under_non_looping",
+      "label": "Kuznecov sum improvement under non-looping",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "l2_excess_relative_to_quadratic_cone_or_leaf",
+      "label": "$L^2$-excess relative to a quadratic cone or leaf",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4660135"
+      ]
+    },
+    {
+      "id": "laplacian_on_metric_cone",
+      "label": "Laplacian on a metric cone",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "large_genus_asymptotics_of_psi_class_correlators",
+      "label": "Large-genus asymptotics of psi-class correlators",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "li_gallot_laplacian_kernel_estimate",
+      "label": "Li-Gallot kernel estimate for Lichnerowicz Laplacians",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4228500"
+      ]
+    },
+    {
+      "id": "liouville_property_for_harmonic_functions",
+      "label": "Liouville property for harmonic functions",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "liouville_type_member_of_moser_trudinger_family",
+      "label": "Liouville-type member of the Moser-Trudinger family",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506774"
+      ]
+    },
+    {
+      "id": "local_gromov_hausdorff_approximation_by_bilip_models",
+      "label": "Local Gromov-Hausdorff approximation by bi-Lipschitz models",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "local_pointed_entropy",
+      "label": "Local pointed entropy",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "local_uniform_curvature_bound_on_regular_parts",
+      "label": "Local uniform curvature bound on regular parts",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4623543"
+      ]
+    },
+    {
+      "id": "locally_monotone_set_in_heisenberg_group",
+      "label": "Locally monotone set in the Heisenberg group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "log_discrepancy_of_valuation",
+      "label": "Log discrepancy of a valuation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4372222"
+      ]
+    },
+    {
+      "id": "logarithmically_improved_weyl_remainder_under_near_periodic_smallness",
+      "label": "Logarithmically improved Weyl remainder under near-periodic smallness",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "masur_veech_volume_formula_for_quadratic_differentials",
+      "label": "Masur-Veech volume formula for quadratic differentials",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "measured_gromov_hausdorff_tangent_space",
+      "label": "Measured Gromov-Hausdorff tangent space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "metric_tangent_measure",
+      "label": "Metric tangent measure",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "mirzakhani_multicurve_frequency",
+      "label": "Mirzakhani frequency of multicurves",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "mod_poisson_convergence",
+      "label": "Mod-Poisson convergence",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "monge_ampere_p_energy",
+      "label": "Monge-Ampère $p$-energy",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "near_periodic_geodesic_set_over_subset",
+      "label": "Near-periodic geodesic set over a subset",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "neck_decomposition",
+      "label": "Neck decomposition",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "neck_region",
+      "label": "Neck region",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "neutral_mode_analysis_for_rotationally_symmetric_ancient_solutions",
+      "label": "Neutral mode analysis for rotationally symmetric ancient solutions",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4323639"
+      ]
+    },
+    {
+      "id": "nilpotent_structure_on_collapsed_k3_surface",
+      "label": "Nilpotent structure on a collapsed K3 surface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "non_branching_metric_measure_space",
+      "label": "Non-branching metric-measure space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4683373"
+      ]
+    },
+    {
+      "id": "non_uniform_random_permutation_measure",
+      "label": "Non-uniform random permutation measure",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "nonseparating_multicurve",
+      "label": "Non-separating multicurve",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "off_diagonal_spectral_projector_asymptotics",
+      "label": "Off-diagonal spectral projector asymptotics",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "one_dimensional_cd_density",
+      "label": "One-dimensional CD(K,N) density",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4309491"
+      ]
+    },
+    {
+      "id": "one_phase_bernoulli_free_boundary_problem",
+      "label": "One-phase Bernoulli free boundary problem",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285137"
+      ]
+    },
+    {
+      "id": "overlap_region_between_tip_and_cylinder",
+      "label": "Overlap region between tip and cylinder",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4323639"
+      ]
+    },
+    {
+      "id": "p_form_curvature_term_control_by_eigenvalue_sums",
+      "label": "p-form curvature-term control by curvature-operator eigenvalue sums",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4228500"
+      ]
+    },
+    {
+      "id": "palais_smale_sequence",
+      "label": "Palais-Smale sequence",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506774"
+      ]
+    },
+    {
+      "id": "periodic_invariant_limit_surface",
+      "label": "Periodic invariant limit surface",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "perturbation_to_genuine_hyperkahler_metrics",
+      "label": "Perturbation to genuine hyperkähler metrics",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "planar_sector",
+      "label": "Planar sector",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635832"
+      ]
+    },
+    {
+      "id": "pollicott_ruelle_coresonant_k_forms_at_zero",
+      "label": "Pollicott-Ruelle coresonant k-forms at zero",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4438356"
+      ]
+    },
+    {
+      "id": "positive_loop_in_einstein_universe",
+      "label": "Positive loop in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "positivity_in_einstein_universe",
+      "label": "Positivity in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "preiss_tangent_measure",
+      "label": "Preiss tangent measure",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "probabilistic_operator_norm_bounds_for_random_covers",
+      "label": "Probabilistic operator-norm bounds for random covers",
+      "reason": "needs one more layer; low confidence",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "propagation_of_singularities_for_wave_equation",
+      "label": "Propagation of singularities for the wave equation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4438353"
+      ]
+    },
+    {
+      "id": "properly_discontinuous_action",
+      "label": "Properly discontinuous action",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "pseudoquad",
+      "label": "Pseudoquad",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "quantitative_stratification",
+      "label": "Quantitative stratification",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "quasimode",
+      "label": "Quasimode",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "quasiperiodic_loop_or_map_in_einstein_universe",
+      "label": "Quasiperiodic loop or map in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "quasiperiodic_surface_in_pseudo_hyperbolic_space",
+      "label": "Quasiperiodic surface in pseudo-hyperbolic space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "random_operator_on_free_group_for_random_covers",
+      "label": "Random operator on the free group for random covers",
+      "reason": "needs one more layer; low confidence",
+      "adequacy": "needs_one_layer",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "riemannian_polyhedron_of_p_type",
+      "label": "Riemannian polyhedron of P-type",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4392462"
+      ]
+    },
+    {
+      "id": "riemannian_symmetric_space",
+      "label": "Riemannian symmetric space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "santalo_formula_for_riemannian_area",
+      "label": "Santaló formula for Riemannian area",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4309496"
+      ]
+    },
+    {
+      "id": "schauder_estimate_for_collapsed_metrics",
+      "label": "Schauder estimate for collapsed metrics",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "semi_positive_loop_in_einstein_universe",
+      "label": "Semi-positive loop in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "separating_multicurve",
+      "label": "Separating multicurve",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "sharp_cone_splitting",
+      "label": "Sharp cone-splitting",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "sharp_energy_estimates_for_moser_trudinger_critical_points",
+      "label": "Sharp energy estimates for Moser-Trudinger critical points",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4506774"
+      ]
+    },
+    {
+      "id": "simple_riemannian_manifold_with_boundary",
+      "label": "Simple Riemannian manifold with boundary",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4309496"
+      ]
+    },
+    {
+      "id": "sl2r_killing_field_type",
+      "label": "Elliptic, parabolic, or hyperbolic Killing field type in SLtilde(2,R)",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "smooth_carleson_square_function",
+      "label": "Smooth Carleson square function",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "solenoidal_gauge_for_tensor_fields",
+      "label": "Solenoidal gauge for tensor fields",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4276284"
+      ]
+    },
+    {
+      "id": "spherical_orbifold",
+      "label": "Spherical orbifold",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4701879"
+      ]
+    },
+    {
+      "id": "square_tiled_surface_combinatorial_frequency",
+      "label": "Frequency of square-tiled surfaces of fixed combinatorial type",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "stable_graph_combinatorial_type",
+      "label": "Stable graph combinatorial type",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "stable_regular_gaussian_cluster",
+      "label": "Stable regular Gaussian cluster",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4358414"
+      ]
+    },
+    {
+      "id": "standard_model_end",
+      "label": "Standard model end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "strictly_convex_level_set_function",
+      "label": "Function with strictly convex level sets",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276284"
+      ]
+    },
+    {
+      "id": "subdivision_algorithm_for_foliated_corona_decomposition",
+      "label": "Subdivision algorithm for foliated corona decompositions",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "surface_preserving_killing_field",
+      "label": "Surface-preserving Killing field",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4228502"
+      ]
+    },
+    {
+      "id": "tangent_point_of_planar_set",
+      "label": "Tangent point of a planar set",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "tangent_space_characterization_of_metric_rectifiability",
+      "label": "Tangent-space characterization of metric rectifiability",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "tangential_c11_minus_epsilon_estimate",
+      "label": "Tangential C^{1,1-epsilon} estimate",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4334976"
+      ]
+    },
+    {
+      "id": "third_order_temporal_theory_of_kantorovich_potentials",
+      "label": "Third-order temporal theory of Kantorovich potentials",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4309491"
+      ]
+    },
+    {
+      "id": "tip_region_of_rotationally_symmetric_ancient_solution",
+      "label": "Tip region of a rotationally symmetric ancient solution",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4323639"
+      ]
+    },
+    {
+      "id": "tip_region_weights_mu_pm",
+      "label": "Tip region weights mu plus and mu minus",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4323639"
+      ]
+    },
+    {
+      "id": "translating_bowl_soliton_mean_curvature_flow",
+      "label": "Translating bowl soliton mean curvature flow",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "two_point_geodesic_incidence_small_measure",
+      "label": "Two-point geodesic incidence small-measure condition",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "two_sided_corkscrew_open_set",
+      "label": "Two-sided corkscrew open set",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "uniform_density_estimate_for_monge_ampere_sections",
+      "label": "Uniform density estimate for Monge-Ampère sections",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4334976"
+      ]
+    },
+    {
+      "id": "uniform_eigenvalue_lattice_counting_bound",
+      "label": "Uniform eigenvalue-lattice counting bound",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4635832"
+      ]
+    },
+    {
+      "id": "uniform_measure_in_heisenberg_group",
+      "label": "Uniform measure in the Heisenberg group",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4359475"
+      ]
+    },
+    {
+      "id": "uniform_obliqueness_for_monge_ampere_second_boundary_condition",
+      "label": "Uniform obliqueness for the Monge-Ampère second boundary condition",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4334976"
+      ]
+    },
+    {
+      "id": "uniform_schauder_estimate_for_cone_metrics",
+      "label": "Uniform Schauder estimate for cone metrics",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "vertical_perimeter_estimate_for_foliated_corona_decompositions",
+      "label": "Vertical perimeter estimate for foliated corona decompositions",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "vertical_perimeter_in_heisenberg_group",
+      "label": "Vertical perimeter in the Heisenberg group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "volume_comparison_growth_argument",
+      "label": "Volume comparison growth argument",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4768633"
+      ]
+    },
+    {
+      "id": "volume_contribution_of_stable_graph",
+      "label": "Volume contribution of a stable graph",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4480147"
+      ]
+    },
+    {
+      "id": "w12_convergence",
+      "label": "W^{1,2} convergence",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4226910"
+      ]
+    },
+    {
+      "id": "weakly_stable_h_surface",
+      "label": "Weakly stable H-surface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4323635"
+      ]
+    },
+    {
+      "id": "weighted_geodesic_x_ray_transform",
+      "label": "Weighted geodesic X-ray transform",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276284"
+      ]
+    },
+    {
+      "id": "weighted_lattice_point_count",
+      "label": "Weighted lattice point count",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635832"
+      ]
+    },
+    {
+      "id": "weighted_schauder_estimate",
+      "label": "Weighted Schauder estimate",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "bad_angle_region",
+      "label": "Bad-angle region",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "change_of_variables_rigidity",
+      "label": "Change-of-variables rigidity",
+      "reason": "has unclear context; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4309491"
+      ]
+    },
+    {
+      "id": "energy_non_concentration_for_coarse_blowups",
+      "label": "Energy non-concentration for coarse blow-ups",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736529"
+      ]
+    },
+    {
+      "id": "half_harmonic_one_form",
+      "label": "Half-harmonic 1-form",
+      "reason": "has unclear context; low confidence; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "liouville_property_for_half_harmonic_one_forms",
+      "label": "Liouville property for half-harmonic 1-forms",
+      "reason": "has unclear context; low confidence",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "low_density_region",
+      "label": "Low-density region",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "non_looping_geodesic_condition",
+      "label": "Non-looping geodesic condition",
+      "reason": "has unclear context; low confidence; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "polyhedral_boundary_area_functional",
+      "label": "Polyhedral boundary area functional",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4392462"
+      ]
+    },
+    {
+      "id": "rank_one_superrigidity_with_noncompatible_targets",
+      "label": "Rank-one superrigidity with noncompatible targets",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601998"
+      ]
+    },
+    {
+      "id": "smooth_local_arc_deviation",
+      "label": "Smooth local arc-deviation quantity",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4276285"
+      ]
+    },
+    {
+      "id": "squash_inequality_for_coarse_blowups",
+      "label": "Squash inequality for coarse blow-ups",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736529"
+      ]
+    },
+    {
+      "id": "superrigidity_for_complex_hyperbolic_lattice_representations",
+      "label": "Superrigidity for complex hyperbolic lattice representations",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601998"
+      ]
+    },
+    {
+      "id": "target_compatibility_with_semisimple_lie_group",
+      "label": "Compatibility of an algebraic target with a semisimple Lie group",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601998"
+      ]
+    }
+  ],
+  "reused_nodes": [
+    {
+      "id": "closed_riemannian_manifold",
+      "label": "Closed Riemannian manifold",
+      "paper_ids": [
+        "mr4228500",
+        "mr4337975",
+        "mr4374954",
+        "mr4438356",
+        "mr4564260",
+        "mr4588565",
+        "mr4713021",
+        "mr4816633",
+        "mr4728241"
+      ],
+      "paper_count": 9
+    },
+    {
+      "id": "hausdorff_measure",
+      "label": "Hausdorff measure",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4285137",
+        "mr4276285",
+        "mr4411732",
+        "mr4506771",
+        "mr4392462"
+      ],
+      "paper_count": 7
+    },
+    {
+      "id": "closed_riemannian_surface",
+      "label": "Closed Riemannian surface",
+      "paper_ids": [
+        "mr4199444",
+        "mr4228502",
+        "mr4337975",
+        "mr4506774",
+        "mr4635304"
+      ],
+      "paper_count": 5
+    },
+    {
+      "id": "rectifiable_set",
+      "label": "k-rectifiable set",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4285137",
+        "mr4276285",
+        "mr4506771"
+      ],
+      "paper_count": 5
+    },
+    {
+      "id": "mean_curvature_flow",
+      "label": "Mean curvature flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990",
+        "mr4824733"
+      ],
+      "paper_count": 4
+    },
+    {
+      "id": "mean_curvature_vector",
+      "label": "Mean-curvature vector",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4564260",
+        "mr4601997"
+      ],
+      "paper_count": 4
+    },
+    {
+      "id": "pointed_gromov_hausdorff_convergence",
+      "label": "Pointed Gromov-Hausdorff convergence",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4602001",
+        "mr4816632"
+      ],
+      "paper_count": 4
+    },
+    {
+      "id": "boundary_distance_function",
+      "label": "Boundary distance function",
+      "paper_ids": [
+        "mr4276284",
+        "mr4309496",
+        "mr4411732"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "harmonic_function",
+      "label": "Harmonic function",
+      "paper_ids": [
+        "mr4226910",
+        "mr4322391",
+        "mr4816633"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "hausdorff_dimension",
+      "label": "Hausdorff dimension",
+      "paper_ids": [
+        "mr4226910",
+        "mr4438357",
+        "mr4695505"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "integral_brakke_flow",
+      "label": "Integral Brakke flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "k_stability",
+      "label": "K-stability",
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558",
+        "mr4372222"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "laplace_beltrami_operator",
+      "label": "Laplace-Beltrami operator",
+      "paper_ids": [
+        "mr4337975",
+        "mr4374954",
+        "mr4588565"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "level_set_flow",
+      "label": "Level set flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4756990",
+        "mr4824733"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "lott_sturm_villani_curvature_dimension_condition",
+      "label": "Lott-Sturm-Villani Curvature-Dimension condition",
+      "paper_ids": [
+        "mr4309491",
+        "mr4411732",
+        "mr4683373"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "mean_curvature",
+      "label": "Mean curvature",
+      "paper_ids": [
+        "mr4228502",
+        "mr4323635",
+        "mr4713021"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "metric_measure_space",
+      "label": "Metric-measure space",
+      "paper_ids": [
+        "mr4309491",
+        "mr4623543",
+        "mr4683373"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "metric_tangent_cone",
+      "label": "Tangent cone",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4411732"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "nonfattening_for_spherical_or_cylindrical_singularities",
+      "label": "Nonfattening for spherical or cylindrical singularities",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "ricci_flow_spacetime",
+      "label": "Ricci flow spacetime",
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904",
+        "mr4623543"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "riemannian_isometry",
+      "label": "Riemannian isometry",
+      "paper_ids": [
+        "mr4228502",
+        "mr4309496",
+        "mr4392462"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "scalar_curvature",
+      "label": "Scalar curvature",
+      "paper_ids": [
+        "mr4323639",
+        "mr4392462",
+        "mr4713021"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "second_fundamental_form_norm",
+      "label": "Norm of the second fundamental form",
+      "paper_ids": [
+        "mr4323635",
+        "mr4448681",
+        "mr4816633"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "stationary_integral_varifold",
+      "label": "Stationary integral varifold",
+      "paper_ids": [
+        "mr4213771",
+        "mr4660135",
+        "mr4736529"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "unit_regular_brakke_flow",
+      "label": "Unit-regular Brakke flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "ale_gravitational_instanton_end",
+      "label": "ALE gravitational instanton end",
+      "paper_ids": [
+        "mr4366415",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "ancient_oval_mean_curvature_flow",
+      "label": "Ancient oval mean curvature flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "ancient_solution",
+      "label": "Ancient solution",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "anosov_flow",
+      "label": "Anosov flow",
+      "paper_ids": [
+        "mr4374954",
+        "mr4438356"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "aspherical_manifold",
+      "label": "Aspherical manifold",
+      "paper_ids": [
+        "mr4713021",
+        "mr4768633"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "brakke_flow",
+      "label": "Brakke flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "bryant_soliton",
+      "label": "Bryant soliton",
+      "paper_ids": [
+        "mr4323639",
+        "mr4448680"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "canonical_neighborhood_assumption_3d_ricci_flow",
+      "label": "Canonical neighborhood assumption for three-dimensional Ricci flow",
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "cheeger_energy",
+      "label": "Cheeger energy",
+      "paper_ids": [
+        "mr4411732",
+        "mr4683373"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "codimension_four_rectifiability_under_two_sided_ricci_bounds",
+      "label": "Codimension-four rectifiability under two-sided Ricci bounds",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "collapsing_ricci_flat_kahler_metrics_on_k3_surface",
+      "label": "Collapsing Ricci-flat Kähler metrics on K3 surfaces",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "compact_hyperbolic_3_manifold",
+      "label": "Compact hyperbolic 3-manifold",
+      "paper_ids": [
+        "mr4438356",
+        "mr4536904"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "complex_monge_ampere_equation",
+      "label": "Complex Monge-Ampère equation",
+      "paper_ids": [
+        "mr4334189",
+        "mr4593734"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "constant_mean_curvature_surface",
+      "label": "Constant mean curvature surface",
+      "paper_ids": [
+        "mr4228502",
+        "mr4323635"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "constant_scalar_curvature_kahler_metric",
+      "label": "Constant scalar curvature Kähler metric",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "csck_continuity_path",
+      "label": "cscK continuity path",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "csck_metric_equation",
+      "label": "cscK metric equation",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "curvature_dimension_globalization_property",
+      "label": "Globalization property for the Curvature-Dimension condition",
+      "paper_ids": [
+        "mr4309491",
+        "mr4683373"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "cyclic_brakke_flow",
+      "label": "Cyclic Brakke flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4756990"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "epsilon_regulariy_for_two_sided_ricci_bounds",
+      "label": "epsilon-regularity for two-sided Ricci bounds",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "euclidean_space",
+      "label": "Euclidean space",
+      "paper_ids": [
+        "mr4309496",
+        "mr4583772"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "fano_anticanonical_pair",
+      "label": "Fano manifold with smooth anticanonical divisor",
+      "paper_ids": [
+        "mr4506773",
+        "mr4602001"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "fattening_of_level_set_flow",
+      "label": "Fattening of level set flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4824733"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "fine_neck_analysis",
+      "label": "Fine neck analysis",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "finite_energy_potential",
+      "label": "Finite energy potential",
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "flat_riemannian_metric",
+      "label": "Flat Riemannian metric",
+      "paper_ids": [
+        "mr4713021",
+        "mr4689374"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "geodesic_flow",
+      "label": "Geodesic flow",
+      "paper_ids": [
+        "mr4374954",
+        "mr4588565"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "geometric_square_function",
+      "label": "Geometric square function",
+      "paper_ids": [
+        "mr4276285",
+        "mr4460594"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "gibbons_hawking_ansatz",
+      "label": "Gibbons-Hawking ansatz",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "gravitational_instanton",
+      "label": "Gravitational instanton",
+      "paper_ids": [
+        "mr4366415",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "gromov_hausdorff_convergence",
+      "label": "Gromov-Hausdorff convergence",
+      "paper_ids": [
+        "mr4322391",
+        "mr4506773"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "heisenberg_group",
+      "label": "Heisenberg group",
+      "paper_ids": [
+        "mr4460594",
+        "mr4359475"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hyperkahler_triple",
+      "label": "Hyperkähler triple",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "infinitesimally_hilbertian_metric_measure_space",
+      "label": "Infinitesimally Hilbertian metric-measure space",
+      "paper_ids": [
+        "mr4411732",
+        "mr4683373"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "integral_varifold",
+      "label": "integral varifold",
+      "paper_ids": [
+        "mr4564260",
+        "mr4660135"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "j_chi_functional",
+      "label": "J_chi functional",
+      "paper_ids": [
+        "mr4301558",
+        "mr4285141"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "k3_surface",
+      "label": "K3 surface",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "kahler_metric",
+      "label": "Kähler metric",
+      "paper_ids": [
+        "mr4285141",
+        "mr4322391"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "laplace_beltrami_eigenvalue_sequence_on_closed_surface",
+      "label": "Laplace-Beltrami eigenvalue sequence on a closed surface",
+      "paper_ids": [
+        "mr4199444",
+        "mr4635304"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "length_space",
+      "label": "Length space",
+      "paper_ids": [
+        "mr4309491",
+        "mr4623543"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "mabuchi_k_energy",
+      "label": "Mabuchi K-energy",
+      "paper_ids": [
+        "mr4301558",
+        "mr4372222"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "maximum_principle_for_minimal_hypersurfaces_and_varifolds",
+      "label": "maximum principle for minimal hypersurfaces and varifolds",
+      "paper_ids": [
+        "mr4564260",
+        "mr4688704"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "mean_convex_neighborhood_property",
+      "label": "Mean-convex neighborhood property",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "mean_curvature_self_expander",
+      "label": "Mean curvature self-expander",
+      "paper_ids": [
+        "mr4756990",
+        "mr4824733"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "metric_cone",
+      "label": "Metric cone",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "neck_decomposition",
+      "label": "Neck decomposition",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "neck_region",
+      "label": "Neck region",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "nilpotent_lie_group",
+      "label": "Nilpotent Lie group",
+      "paper_ids": [
+        "mr4322391",
+        "mr4583772"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "non_archimedean_ding_functional",
+      "label": "Non-Archimedean Ding functional",
+      "paper_ids": [
+        "mr4334189",
+        "mr4372222"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "noncollapsed_ricci_limit_space",
+      "label": "Noncollapsed Ricci-limit space",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "noncollapsing_volume_condition",
+      "label": "Noncollapsing volume condition",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "polyhedral_rigidity_under_dihedral_comparison",
+      "label": "Polyhedral rigidity under dihedral comparison",
+      "paper_ids": [
+        "mr4392462",
+        "mr4689374"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "positive_lower_hausdorff_density",
+      "label": "Positive lower Hausdorff density",
+      "paper_ids": [
+        "mr4506771",
+        "mr4359475"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "quantitative_stratification",
+      "label": "Quantitative stratification",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "ricci_flow",
+      "label": "Ricci flow",
+      "paper_ids": [
+        "mr4323639",
+        "mr4623543"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "ricci_flow_equation",
+      "label": "Ricci flow equation",
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "riemannian_distance_function",
+      "label": "Riemannian distance function",
+      "paper_ids": [
+        "mr4276284",
+        "mr4309496"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "riemannian_metric",
+      "label": "Riemannian metric",
+      "paper_ids": [
+        "mr4623543",
+        "mr4713021"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "riemannian_universal_cover",
+      "label": "Riemannian universal cover",
+      "paper_ids": [
+        "mr4228502",
+        "mr4768633"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "round_shrinking_cylinder_mean_curvature_flow",
+      "label": "Round shrinking cylinder mean curvature flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "scalar_curvature_a_priori_estimates",
+      "label": "A priori estimates for scalar-curvature type equations",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "self_shrinker",
+      "label": "Self-shrinker",
+      "paper_ids": [
+        "mr4438354",
+        "mr4756990"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "singular_ricci_flow",
+      "label": "Singular Ricci flow",
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "singular_set_of_limit_space",
+      "label": "Singular set of a limit space",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "spherical_or_cylindrical_singularity",
+      "label": "Spherical or cylindrical singularity",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "tian_yau_metric",
+      "label": "Tian-Yau metric",
+      "paper_ids": [
+        "mr4322391",
+        "mr4506773"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "translating_bowl_soliton_mean_curvature_flow",
+      "label": "Translating bowl soliton mean curvature flow",
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "two_sided_ricci_curvature_bound",
+      "label": "Two-sided Ricci curvature bound",
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "uniqueness_of_singular_ricci_flows",
+      "label": "Uniqueness of singular Ricci flows",
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "yau_tian_donaldson_conjecture",
+      "label": "Yau-Tian-Donaldson conjecture",
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    }
+  ],
+  "overlap_warnings": [
+    {
+      "id": "ancient_oval_mean_curvature_flow",
+      "label": "Ancient oval mean curvature flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "ancient_solution",
+      "label": "Ancient solution",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "aspherical_manifold",
+      "label": "Aspherical manifold",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4713021",
+        "mr4768633"
+      ]
+    },
+    {
+      "id": "brakke_flow",
+      "label": "Brakke flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "bryant_soliton",
+      "label": "Bryant soliton",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4323639",
+        "mr4448680"
+      ]
+    },
+    {
+      "id": "canonical_neighborhood_assumption_3d_ricci_flow",
+      "label": "Canonical neighborhood assumption for three-dimensional Ricci flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ]
+    },
+    {
+      "id": "cheeger_energy",
+      "label": "Cheeger energy",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4411732",
+        "mr4683373"
+      ]
+    },
+    {
+      "id": "closed_riemannian_manifold",
+      "label": "Closed Riemannian manifold",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4228500",
+        "mr4337975",
+        "mr4374954",
+        "mr4438356",
+        "mr4564260",
+        "mr4588565",
+        "mr4713021",
+        "mr4816633",
+        "mr4728241"
+      ]
+    },
+    {
+      "id": "closed_riemannian_surface",
+      "label": "Closed Riemannian surface",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4199444",
+        "mr4228502",
+        "mr4337975",
+        "mr4506774",
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "codimension_four_rectifiability_under_two_sided_ricci_bounds",
+      "label": "Codimension-four rectifiability under two-sided Ricci bounds",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "collapsing_ricci_flat_kahler_metrics_on_k3_surface",
+      "label": "Collapsing Ricci-flat Kähler metrics on K3 surfaces",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "complex_monge_ampere_equation",
+      "label": "Complex Monge-Ampère equation",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "constant_scalar_curvature_kahler_metric",
+      "label": "Constant scalar curvature Kähler metric",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "csck_continuity_path",
+      "label": "cscK continuity path",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "csck_metric_equation",
+      "label": "cscK metric equation",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "curvature_dimension_globalization_property",
+      "label": "Globalization property for the Curvature-Dimension condition",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4309491",
+        "mr4683373"
+      ]
+    },
+    {
+      "id": "epsilon_regulariy_for_two_sided_ricci_bounds",
+      "label": "epsilon-regularity for two-sided Ricci bounds",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "euclidean_space",
+      "label": "Euclidean space",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4309496",
+        "mr4583772"
+      ]
+    },
+    {
+      "id": "fine_neck_analysis",
+      "label": "Fine neck analysis",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "finite_energy_potential",
+      "label": "Finite energy potential",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "geometric_square_function",
+      "label": "Geometric square function",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4276285",
+        "mr4460594"
+      ]
+    },
+    {
+      "id": "hausdorff_measure",
+      "label": "Hausdorff measure",
+      "ontology_statuses": [
+        "existing",
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4285137",
+        "mr4276285",
+        "mr4411732",
+        "mr4506771",
+        "mr4392462"
+      ]
+    },
+    {
+      "id": "infinitesimally_hilbertian_metric_measure_space",
+      "label": "Infinitesimally Hilbertian metric-measure space",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4411732",
+        "mr4683373"
+      ]
+    },
+    {
+      "id": "integral_brakke_flow",
+      "label": "Integral Brakke flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ]
+    },
+    {
+      "id": "integral_varifold",
+      "label": "integral varifold",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4564260",
+        "mr4660135"
+      ]
+    },
+    {
+      "id": "k3_surface",
+      "label": "K3 surface",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "k_stability",
+      "label": "K-stability",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558",
+        "mr4372222"
+      ]
+    },
+    {
+      "id": "kahler_metric",
+      "label": "Kähler metric",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4285141",
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "laplace_beltrami_eigenvalue_sequence_on_closed_surface",
+      "label": "Laplace-Beltrami eigenvalue sequence on a closed surface",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4199444",
+        "mr4635304"
+      ]
+    },
+    {
+      "id": "laplace_beltrami_operator",
+      "label": "Laplace-Beltrami operator",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4337975",
+        "mr4374954",
+        "mr4588565"
+      ]
+    },
+    {
+      "id": "lott_sturm_villani_curvature_dimension_condition",
+      "label": "Lott-Sturm-Villani Curvature-Dimension condition",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4309491",
+        "mr4411732",
+        "mr4683373"
+      ]
+    },
+    {
+      "id": "mabuchi_k_energy",
+      "label": "Mabuchi K-energy",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4372222"
+      ]
+    },
+    {
+      "id": "maximum_principle_for_minimal_hypersurfaces_and_varifolds",
+      "label": "maximum principle for minimal hypersurfaces and varifolds",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4564260",
+        "mr4688704"
+      ]
+    },
+    {
+      "id": "mean_convex_neighborhood_property",
+      "label": "Mean-convex neighborhood property",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "mean_curvature",
+      "label": "Mean curvature",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4228502",
+        "mr4323635",
+        "mr4713021"
+      ]
+    },
+    {
+      "id": "mean_curvature_flow",
+      "label": "Mean curvature flow",
+      "ontology_statuses": [
+        "existing",
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990",
+        "mr4824733"
+      ]
+    },
+    {
+      "id": "mean_curvature_self_expander",
+      "label": "Mean curvature self-expander",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4756990",
+        "mr4824733"
+      ]
+    },
+    {
+      "id": "mean_curvature_vector",
+      "label": "Mean-curvature vector",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4564260",
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "metric_tangent_cone",
+      "label": "Tangent cone",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4411732"
+      ]
+    },
+    {
+      "id": "nilpotent_lie_group",
+      "label": "Nilpotent Lie group",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4583772"
+      ]
+    },
+    {
+      "id": "non_archimedean_ding_functional",
+      "label": "Non-Archimedean Ding functional",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4372222"
+      ]
+    },
+    {
+      "id": "noncollapsed_ricci_limit_space",
+      "label": "Noncollapsed Ricci-limit space",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "nonfattening_for_spherical_or_cylindrical_singularities",
+      "label": "Nonfattening for spherical or cylindrical singularities",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ]
+    },
+    {
+      "id": "polyhedral_rigidity_under_dihedral_comparison",
+      "label": "Polyhedral rigidity under dihedral comparison",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4392462",
+        "mr4689374"
+      ]
+    },
+    {
+      "id": "positive_lower_hausdorff_density",
+      "label": "Positive lower Hausdorff density",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4506771",
+        "mr4359475"
+      ]
+    },
+    {
+      "id": "quantitative_stratification",
+      "label": "Quantitative stratification",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730"
+      ]
+    },
+    {
+      "id": "rectifiable_set",
+      "label": "k-rectifiable set",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4226910",
+        "mr4199730",
+        "mr4285137",
+        "mr4276285",
+        "mr4506771"
+      ]
+    },
+    {
+      "id": "ricci_flow_equation",
+      "label": "Ricci flow equation",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ]
+    },
+    {
+      "id": "riemannian_universal_cover",
+      "label": "Riemannian universal cover",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4228502",
+        "mr4768633"
+      ]
+    },
+    {
+      "id": "round_shrinking_cylinder_mean_curvature_flow",
+      "label": "Round shrinking cylinder mean curvature flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "scalar_curvature_a_priori_estimates",
+      "label": "A priori estimates for scalar-curvature type equations",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "second_fundamental_form_norm",
+      "label": "Norm of the second fundamental form",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4323635",
+        "mr4448681",
+        "mr4816633"
+      ]
+    },
+    {
+      "id": "self_shrinker",
+      "label": "Self-shrinker",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4438354",
+        "mr4756990"
+      ]
+    },
+    {
+      "id": "singular_ricci_flow",
+      "label": "Singular Ricci flow",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ]
+    },
+    {
+      "id": "spherical_or_cylindrical_singularity",
+      "label": "Spherical or cylindrical singularity",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "stationary_integral_varifold",
+      "label": "Stationary integral varifold",
+      "ontology_statuses": [
+        "existing",
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4213771",
+        "mr4660135",
+        "mr4736529"
+      ]
+    },
+    {
+      "id": "tian_yau_metric",
+      "label": "Tian-Yau metric",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4506773"
+      ]
+    },
+    {
+      "id": "translating_bowl_soliton_mean_curvature_flow",
+      "label": "Translating bowl soliton mean curvature flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354"
+      ]
+    },
+    {
+      "id": "uniqueness_of_singular_ricci_flows",
+      "label": "Uniqueness of singular Ricci flows",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448680",
+        "mr4536904"
+      ]
+    },
+    {
+      "id": "unit_regular_brakke_flow",
+      "label": "Unit-regular Brakke flow",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4448681",
+        "mr4438354",
+        "mr4756990"
+      ]
+    },
+    {
+      "id": "yau_tian_donaldson_conjecture",
+      "label": "Yau-Tian-Donaldson conjecture",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ]
+    }
+  ],
+  "relation_groups": {
+    "strict_dependency": [
+      "computed_by",
+      "constructed_using",
+      "definition_depends_on",
+      "has_primitive",
+      "has_property",
+      "specializes",
+      "uses_method"
+    ],
+    "topical": [
+      "belongs_to_topic"
+    ]
+  }
+}
