@@ -1,0 +1,2729 @@
+{
+  "schema_version": "quiver.site_analysis.v1",
+  "generated_at": "2026-06-24T15:01:22.837829Z",
+  "summary": {
+    "papers": 41,
+    "concepts": 1139,
+    "dependencies": 1928,
+    "concepts_needing_context": 104,
+    "reused_concepts": 57,
+    "overlapping_concepts": 41,
+    "evidence_warnings": 975
+  },
+  "counts": {
+    "relations": [
+      {
+        "key": "definition_depends_on",
+        "count": 1113
+      },
+      {
+        "key": "constructed_using",
+        "count": 205
+      },
+      {
+        "key": "uses_method",
+        "count": 186
+      },
+      {
+        "key": "specializes",
+        "count": 160
+      },
+      {
+        "key": "has_property",
+        "count": 131
+      },
+      {
+        "key": "computed_by",
+        "count": 93
+      },
+      {
+        "key": "belongs_to_topic",
+        "count": 25
+      },
+      {
+        "key": "has_primitive",
+        "count": 15
+      }
+    ],
+    "entity_types": [
+      {
+        "key": "definition",
+        "count": 420
+      },
+      {
+        "key": "object",
+        "count": 302
+      },
+      {
+        "key": "property",
+        "count": 225
+      },
+      {
+        "key": "method",
+        "count": 144
+      },
+      {
+        "key": "notation",
+        "count": 34
+      },
+      {
+        "key": "primitive",
+        "count": 7
+      },
+      {
+        "key": "topic",
+        "count": 7
+      }
+    ],
+    "local_roles": [
+      {
+        "key": "supporting",
+        "count": 521
+      },
+      {
+        "key": "main",
+        "count": 426
+      },
+      {
+        "key": "background",
+        "count": 98
+      },
+      {
+        "key": "frontier",
+        "count": 94
+      }
+    ],
+    "adequacy": [
+      {
+        "key": "adequate",
+        "count": 1035
+      },
+      {
+        "key": "needs_one_layer",
+        "count": 97
+      },
+      {
+        "key": "unclear",
+        "count": 7
+      }
+    ],
+    "confidence": [
+      {
+        "key": "high",
+        "count": 965
+      },
+      {
+        "key": "medium",
+        "count": 170
+      },
+      {
+        "key": "low",
+        "count": 4
+      }
+    ]
+  },
+  "paper_summaries": [
+    {
+      "id": "mr4270663",
+      "title": "Zero loci of Bernstein-Sato ideals",
+      "concepts": 38,
+      "unique_concepts": 37,
+      "reused_concepts": 1,
+      "dependency_links": 52,
+      "evidence_warnings": 43,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4270664",
+      "title": "Reflexive sheaves, Hermitian-Yang-Mills connections, and tangent cones",
+      "concepts": 31,
+      "unique_concepts": 28,
+      "reused_concepts": 3,
+      "dependency_links": 51,
+      "evidence_warnings": 16,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4276288",
+      "title": "Spectral interpretations of dynamical degrees and applications",
+      "concepts": 32,
+      "unique_concepts": 31,
+      "reused_concepts": 1,
+      "dependency_links": 54,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4280862",
+      "title": "Extending holomorphic forms from the regular locus of a complex space to a resolution of singularities",
+      "concepts": 48,
+      "unique_concepts": 41,
+      "reused_concepts": 7,
+      "dependency_links": 89,
+      "evidence_warnings": 94,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4285141",
+      "title": "The J-equation and the supercritical deformed Hermitian-Yang-Mills equation",
+      "concepts": 35,
+      "unique_concepts": 30,
+      "reused_concepts": 5,
+      "dependency_links": 63,
+      "evidence_warnings": 63,
+      "concepts_needing_context": 6
+    },
+    {
+      "id": "mr4296351",
+      "title": "On the closure of the Hodge locus of positive period dimension",
+      "concepts": 28,
+      "unique_concepts": 18,
+      "reused_concepts": 10,
+      "dependency_links": 43,
+      "evidence_warnings": 62,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4301557",
+      "title": "On the constant scalar curvature Kähler metrics (I)—A priori estimates",
+      "concepts": 20,
+      "unique_concepts": 15,
+      "reused_concepts": 5,
+      "dependency_links": 31,
+      "evidence_warnings": 7,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4301558",
+      "title": "On the constant scalar curvature Kähler metrics (II)—Existence results",
+      "concepts": 26,
+      "unique_concepts": 18,
+      "reused_concepts": 8,
+      "dependency_links": 40,
+      "evidence_warnings": 34,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4322391",
+      "title": "Nilpotent structures and collapsing Ricci-flat metrics on the K3 surface",
+      "concepts": 33,
+      "unique_concepts": 26,
+      "reused_concepts": 7,
+      "dependency_links": 52,
+      "evidence_warnings": 27,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4323636",
+      "title": "Yano's conjecture",
+      "concepts": 33,
+      "unique_concepts": 32,
+      "reused_concepts": 1,
+      "dependency_links": 56,
+      "evidence_warnings": 18,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4334189",
+      "title": "A variational approach to the Yau-Tian-Donaldson conjecture",
+      "concepts": 34,
+      "unique_concepts": 27,
+      "reused_concepts": 7,
+      "dependency_links": 62,
+      "evidence_warnings": 27,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4337974",
+      "title": "Large genus asymptotics for intersection numbers and principal strata volumes of quadratic differentials",
+      "concepts": 23,
+      "unique_concepts": 20,
+      "reused_concepts": 3,
+      "dependency_links": 34,
+      "evidence_warnings": 3,
+      "concepts_needing_context": 8
+    },
+    {
+      "id": "mr4358413",
+      "title": "Lebesgue measure of Feigenbaum Julia sets",
+      "concepts": 45,
+      "unique_concepts": 45,
+      "reused_concepts": 0,
+      "dependency_links": 67,
+      "evidence_warnings": 9,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4366415",
+      "title": "Gravitational instantons with faster than quadratic curvature decay. I",
+      "concepts": 36,
+      "unique_concepts": 35,
+      "reused_concepts": 1,
+      "dependency_links": 52,
+      "evidence_warnings": 7,
+      "concepts_needing_context": 17
+    },
+    {
+      "id": "mr4372222",
+      "title": "$G$-uniform stability and Kähler-Einstein metrics on Fano varieties",
+      "concepts": 26,
+      "unique_concepts": 24,
+      "reused_concepts": 2,
+      "dependency_links": 46,
+      "evidence_warnings": 39,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4413746",
+      "title": "Rigid local systems and the multiplicative eigenvalue problem",
+      "concepts": 22,
+      "unique_concepts": 21,
+      "reused_concepts": 1,
+      "dependency_links": 28,
+      "evidence_warnings": 12,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4419632",
+      "title": "Algebraic approximation and the decomposition theorem for Kähler Calabi-Yau varieties",
+      "concepts": 35,
+      "unique_concepts": 29,
+      "reused_concepts": 6,
+      "dependency_links": 63,
+      "evidence_warnings": 67,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4433080",
+      "title": "Hitchin fibrations, abelian surfaces, and the $P=W$ conjecture",
+      "concepts": 25,
+      "unique_concepts": 19,
+      "reused_concepts": 6,
+      "dependency_links": 29,
+      "evidence_warnings": 4,
+      "concepts_needing_context": 5
+    },
+    {
+      "id": "mr4460593",
+      "title": "Strominger-Yau-Zaslow conjecture for Calabi-Yau hypersurfaces in the Fermat family",
+      "concepts": 30,
+      "unique_concepts": 27,
+      "reused_concepts": 3,
+      "dependency_links": 46,
+      "evidence_warnings": 22,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4506773",
+      "title": "Degenerating Kähler-Einstein cones, locally symmetric cusps, and the Tian-Yau metric",
+      "concepts": 28,
+      "unique_concepts": 25,
+      "reused_concepts": 3,
+      "dependency_links": 50,
+      "evidence_warnings": 68,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4513144",
+      "title": "Special subvarieties of non-arithmetic ball quotients and Hodge theory",
+      "concepts": 37,
+      "unique_concepts": 32,
+      "reused_concepts": 5,
+      "dependency_links": 66,
+      "evidence_warnings": 34,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4554225",
+      "title": "Sendov's conjecture for sufficiently-high-degree polynomials",
+      "concepts": 34,
+      "unique_concepts": 34,
+      "reused_concepts": 0,
+      "dependency_links": 55,
+      "evidence_warnings": 55,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4557401",
+      "title": "o-minimal GAGA and a conjecture of Griffiths",
+      "concepts": 19,
+      "unique_concepts": 16,
+      "reused_concepts": 3,
+      "dependency_links": 27,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4593732",
+      "title": "Transversality and super-rigidity for multiply covered holomorphic curves",
+      "concepts": 32,
+      "unique_concepts": 32,
+      "reused_concepts": 0,
+      "dependency_links": 63,
+      "evidence_warnings": 8,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4593734",
+      "title": "On $L^\\infty$ estimates for complex Monge-Ampère equations",
+      "concepts": 19,
+      "unique_concepts": 16,
+      "reused_concepts": 3,
+      "dependency_links": 30,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4601997",
+      "title": "Quasicircles and quasiperiodic surfaces in pseudo-hyperbolic spaces",
+      "concepts": 31,
+      "unique_concepts": 31,
+      "reused_concepts": 0,
+      "dependency_links": 42,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 13
+    },
+    {
+      "id": "mr4602001",
+      "title": "No semistability at infinity for Calabi-Yau metrics asymptotic to cones",
+      "concepts": 32,
+      "unique_concepts": 30,
+      "reused_concepts": 2,
+      "dependency_links": 53,
+      "evidence_warnings": 32,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4628606",
+      "title": "Pixton's formula and Abel-Jacobi theory on the Picard stack",
+      "concepts": 22,
+      "unique_concepts": 21,
+      "reused_concepts": 1,
+      "dependency_links": 36,
+      "evidence_warnings": 26,
+      "concepts_needing_context": 10
+    },
+    {
+      "id": "mr4635299",
+      "title": "The Frobenius structure theorem for affine log Calabi-Yau varieties containing a torus",
+      "concepts": 27,
+      "unique_concepts": 27,
+      "reused_concepts": 0,
+      "dependency_links": 52,
+      "evidence_warnings": 38,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4635302",
+      "title": "High rank invariant subvarieties",
+      "concepts": 21,
+      "unique_concepts": 20,
+      "reused_concepts": 1,
+      "dependency_links": 29,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4654610",
+      "title": "Computing Riemann-Roch polynomials and classifying hyper-Kähler fourfolds",
+      "concepts": 23,
+      "unique_concepts": 19,
+      "reused_concepts": 4,
+      "dependency_links": 33,
+      "evidence_warnings": 20,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4689371",
+      "title": "On the distribution of the Hodge locus",
+      "concepts": 38,
+      "unique_concepts": 26,
+      "reused_concepts": 12,
+      "dependency_links": 69,
+      "evidence_warnings": 43,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4713024",
+      "title": "Oka properties of complements of holomorphically convex sets",
+      "concepts": 30,
+      "unique_concepts": 30,
+      "reused_concepts": 0,
+      "dependency_links": 49,
+      "evidence_warnings": 16,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4717077",
+      "title": "Canonical representations of surface groups",
+      "concepts": 32,
+      "unique_concepts": 31,
+      "reused_concepts": 1,
+      "dependency_links": 44,
+      "evidence_warnings": 1,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4736527",
+      "title": "Geometric local systems on very general curves and isomonodromy",
+      "concepts": 28,
+      "unique_concepts": 27,
+      "reused_concepts": 1,
+      "dependency_links": 40,
+      "evidence_warnings": 11,
+      "concepts_needing_context": 4
+    },
+    {
+      "id": "mr4740541",
+      "title": "Polynomial point counts and odd cohomology vanishing on moduli spaces of stable curves",
+      "concepts": 20,
+      "unique_concepts": 19,
+      "reused_concepts": 1,
+      "dependency_links": 32,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 0
+    },
+    {
+      "id": "mr4743516",
+      "title": "$L^2$-cohomology of quasi-fibered boundary metrics",
+      "concepts": 33,
+      "unique_concepts": 33,
+      "reused_concepts": 0,
+      "dependency_links": 57,
+      "evidence_warnings": 19,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4792069",
+      "title": "The $P=W$ conjecture for ${\\rm GL}_n$",
+      "concepts": 15,
+      "unique_concepts": 10,
+      "reused_concepts": 5,
+      "dependency_links": 21,
+      "evidence_warnings": 4,
+      "concepts_needing_context": 2
+    },
+    {
+      "id": "mr4792072",
+      "title": "The local-global conjecture for Apollonian circle packings is false",
+      "concepts": 34,
+      "unique_concepts": 34,
+      "reused_concepts": 0,
+      "dependency_links": 57,
+      "evidence_warnings": 24,
+      "concepts_needing_context": 3
+    },
+    {
+      "id": "mr4816435",
+      "title": "A general Cayley correspondence and higher rank Teichmüller spaces",
+      "concepts": 28,
+      "unique_concepts": 27,
+      "reused_concepts": 1,
+      "dependency_links": 42,
+      "evidence_warnings": 22,
+      "concepts_needing_context": 1
+    },
+    {
+      "id": "mr4816632",
+      "title": "Collapsing geometry of hyperkähler 4-manifolds and applications",
+      "concepts": 23,
+      "unique_concepts": 19,
+      "reused_concepts": 4,
+      "dependency_links": 31,
+      "evidence_warnings": 0,
+      "concepts_needing_context": 3
+    }
+  ],
+  "frontier_nodes": [
+    {
+      "id": "ale_gravitational_instanton_end",
+      "label": "ALE gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alf_dk_gravitational_instanton",
+      "label": "ALF-D_k gravitational instanton",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alf_gravitational_instanton_end",
+      "label": "ALF gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alg_gravitational_instanton_end",
+      "label": "ALG gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alh_gravitational_instanton_end",
+      "label": "ALH gravitational instanton end",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "alh_non_splitting_instanton",
+      "label": "ALH non-splitting instanton",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "anosov_representation",
+      "label": "Anosov representation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "apollonian_group",
+      "label": "Apollonian group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4792072"
+      ]
+    },
+    {
+      "id": "area_siegel_veech_constant",
+      "label": "Area Siegel-Veech constant",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "arithmetic_linear_representation",
+      "label": "Arithmetic linear representation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4717077"
+      ]
+    },
+    {
+      "id": "asymptotic_riemannian_fibration",
+      "label": "Asymptotic Riemannian fibration",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "asymptotic_to_standard_metric_order_epsilon",
+      "label": "Asymptotic to a standard metric of order epsilon",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "b_chow_double_ramification_class",
+      "label": "Double ramification class in b-Chow",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "base_point_free_cycle_class",
+      "label": "Base-point free cycle class",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276288"
+      ]
+    },
+    {
+      "id": "bpf_norm_on_b_classes",
+      "label": "BPF norm on numerical b-classes",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276288"
+      ]
+    },
+    {
+      "id": "compactified_projectivized_hodge_bundle",
+      "label": "Compactified projectivized Hodge bundle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "complex_variation_of_hodge_structure",
+      "label": "Complex variation of Hodge structures",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4413746"
+      ]
+    },
+    {
+      "id": "conformal_blocks_for_special_linear_group",
+      "label": "Conformal blocks for the special linear group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4413746"
+      ]
+    },
+    {
+      "id": "degeneration_to_normal_cone",
+      "label": "Degeneration to the normal cone",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "double_ramification_cycle_with_target_variety",
+      "label": "Double ramification cycle with target variety",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "elliptic_estimates_with_exponential_growth_weights",
+      "label": "Elliptic estimates with exponential growth weights",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "elliptic_estimates_with_polynomial_growth_weights",
+      "label": "Elliptic estimates with polynomial growth weights",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "extremal_kahler_metric",
+      "label": "Extremal Kähler metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "fock_goncharov_skew_symmetric_x_cluster_variety",
+      "label": "Fock-Goncharov skew-symmetric X-cluster variety",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4635299"
+      ]
+    },
+    {
+      "id": "fontaine_mazur_conjecture",
+      "label": "Fontaine-Mazur conjecture",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4717077"
+      ]
+    },
+    {
+      "id": "free_cylinder",
+      "label": "Free cylinder",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4635302"
+      ]
+    },
+    {
+      "id": "fully_nonlinear_comparison_structural_condition",
+      "label": "Fully nonlinear comparison structural condition",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "gaussian_integer_lattice_of_circle",
+      "label": "Gaussian integer lattice associated to a circle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4792072"
+      ]
+    },
+    {
+      "id": "generalized_volume_minimization_for_k_semistable_valuations",
+      "label": "Generalized volume minimization for K-semistable valuations",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "geodesic_loop_basis_decomposition",
+      "label": "Geodesic loop basis decomposition",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "geometric_local_system",
+      "label": "Geometric local system",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4736527"
+      ]
+    },
+    {
+      "id": "ghkk_cluster_mirror_algebra",
+      "label": "GHKK cluster mirror algebra",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4635299"
+      ]
+    },
+    {
+      "id": "hilbert_chow_morphism_for_sheaf_moduli",
+      "label": "Hilbert-Chow morphism for sheaf moduli",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4433080"
+      ]
+    },
+    {
+      "id": "hilbert_scheme_of_two_points_on_k3_surface",
+      "label": "Hilbert scheme of two points on a K3 surface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4654610"
+      ]
+    },
+    {
+      "id": "hodge_bundle_curvature_semistability_obstruction",
+      "label": "Hodge-bundle curvature obstruction to semistability",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736527"
+      ]
+    },
+    {
+      "id": "hodge_codimension",
+      "label": "Hodge codimension",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "holomorphic_function_construction_on_gravitational_instantons",
+      "label": "Holomorphic function construction on gravitational instantons",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "holonomy_control_of_geodesic_loops",
+      "label": "Holonomy control of geodesic loops",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "holonomy_double_cover_locus",
+      "label": "Holonomy double-cover locus",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635302"
+      ]
+    },
+    {
+      "id": "hyperbolic_dimension",
+      "label": "Hyperbolic dimension",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4358413"
+      ]
+    },
+    {
+      "id": "invariance_properties_of_twisted_double_ramification_cycles",
+      "label": "Invariance properties of twisted double ramification cycles",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "k_semistability_for_fano_cones",
+      "label": "K-semistability for Fano cones",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "kahler_test_configuration",
+      "label": "Kähler test configuration",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "kodaira_parshin_trick",
+      "label": "Kodaira-Parshin trick",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4736527"
+      ]
+    },
+    {
+      "id": "large_genus_asymptotic_for_principal_strata_area_siegel_veech_constants",
+      "label": "Large genus asymptotic for principal strata area Siegel-Veech constants",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "large_genus_asymptotic_for_principal_strata_volumes",
+      "label": "Large genus asymptotic for principal strata volumes",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "local_covering_space_from_short_geodesic_loops",
+      "label": "Local covering space from short geodesic loops",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "local_integral_monodromy",
+      "label": "Local integral monodromy",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "logarithmic_rubber_moduli_space",
+      "label": "Logarithmic rubber moduli space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "markman_monodromy_operators",
+      "label": "Markman monodromy operators",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4433080"
+      ]
+    },
+    {
+      "id": "masur_veech_measure",
+      "label": "Masur-Veech measure",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "minimum_norm_of_test_configuration",
+      "label": "Minimum norm of a test configuration",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "moduli_space_of_one_dimensional_sheaves_on_abelian_surface",
+      "label": "Moduli space of one-dimensional sheaves on an abelian surface",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4433080"
+      ]
+    },
+    {
+      "id": "monge_ampere_p_energy",
+      "label": "Monge-Ampère p-energy",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "nested_free_cylinder",
+      "label": "Nested free cylinder",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635302"
+      ]
+    },
+    {
+      "id": "non_isotrivial_local_system",
+      "label": "Non-isotrivial local system",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4736527"
+      ]
+    },
+    {
+      "id": "normalized_volume_of_valuation",
+      "label": "Normalized volume of a valuation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "numerical_j_invariant",
+      "label": "Numerical J-invariant",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "operational_chow_group_of_algebraic_stack",
+      "label": "Operational Chow group of an algebraic stack",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "parabolic_anosov_representation",
+      "label": "Parabolic Anosov representation",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4816435"
+      ]
+    },
+    {
+      "id": "parabolic_hitchin_fibration",
+      "label": "Parabolic Hitchin fibration",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "perverse_sheaf",
+      "label": "Perverse sheaf",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4280862",
+        "mr4270663"
+      ]
+    },
+    {
+      "id": "petri_condition_for_cauchy_riemann_operators",
+      "label": "Petri condition for Cauchy-Riemann operators",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4593732"
+      ]
+    },
+    {
+      "id": "pixton_formula_for_double_ramification_cycles",
+      "label": "Pixton's formula for double ramification cycles",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "positive_loop_in_einstein_universe",
+      "label": "Positive loop in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "positive_map_to_einstein_universe",
+      "label": "Positive map to the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "positivity_in_einstein_universe",
+      "label": "Positivity in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "principal_stratum_of_quadratic_differentials",
+      "label": "Principal stratum of quadratic differentials",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "putman_wieland_conjecture",
+      "label": "Putman-Wieland conjecture",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4717077"
+      ]
+    },
+    {
+      "id": "qfb_compactification_of_su2_monopole_moduli",
+      "label": "QFB compactification of SU(2) monopole moduli space",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4743516"
+      ]
+    },
+    {
+      "id": "qfb_pseudodifferential_parametrix",
+      "label": "QFB pseudodifferential parametrix method",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4743516"
+      ]
+    },
+    {
+      "id": "quadratic_differential_on_complex_curve",
+      "label": "Quadratic differential on a complex curve",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "quantum_schubert_calculus",
+      "label": "Quantum Schubert calculus",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4413746"
+      ]
+    },
+    {
+      "id": "quasi_asymptotically_locally_euclidean_metric",
+      "label": "Quasi-asymptotically locally Euclidean metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4743516"
+      ]
+    },
+    {
+      "id": "quasiperiodic_loop_in_einstein_universe",
+      "label": "Quasiperiodic loop in the Einstein Universe",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "quasiperiodic_surface_in_pseudo_hyperbolic_space",
+      "label": "Quasiperiodic maximal surface in pseudo-hyperbolic space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "regularized_maximum_of_plurisubharmonic_potentials",
+      "label": "Regularized maximum of potentials",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "relative_picard_space_of_curves",
+      "label": "Relative Picard space of curves",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "renormalized_limit_measure",
+      "label": "Renormalized limit measure",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "semistability_of_isomonodromic_deformations",
+      "label": "Semistability of isomonodromic deformations",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4717077"
+      ]
+    },
+    {
+      "id": "short_geodesic_loop",
+      "label": "Short geodesic loop",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "sigma_norm_on_b_divisors",
+      "label": "Sigma norm on b-divisors",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4276288"
+      ]
+    },
+    {
+      "id": "spacelike_surface_in_pseudo_hyperbolic_space",
+      "label": "Spacelike surface in pseudo-hyperbolic space",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "special_kahler_metric",
+      "label": "Special Kähler metric",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "stable_higgs_bundle_on_curve",
+      "label": "Stable Higgs bundle on a curve",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "standard_gravitational_instanton_end_model",
+      "label": "Standard gravitational instanton end model",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "strange_duality",
+      "label": "Strange duality",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4413746"
+      ]
+    },
+    {
+      "id": "stratum_of_quadratic_differentials",
+      "label": "Stratum of quadratic differentials",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4635302",
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "szekelyhidi_fully_nonlinear_estimates",
+      "label": "Székelyhidi fully nonlinear estimates",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4285141"
+      ]
+    },
+    {
+      "id": "tautological_cohomology_generators_for_higgs_moduli",
+      "label": "Tautological cohomology generators for Higgs moduli",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4433080"
+      ]
+    },
+    {
+      "id": "thin_group",
+      "label": "Thin group",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "background",
+      "paper_ids": [
+        "mr4792072"
+      ]
+    },
+    {
+      "id": "twisted_differential_stratum",
+      "label": "Stratum of twisted holomorphic or meromorphic differentials",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "twisted_double_ramification_cycle",
+      "label": "Twisted double ramification cycle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "twisted_vector_bundle",
+      "label": "Twisted vector bundle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4593732"
+      ]
+    },
+    {
+      "id": "universal_operational_double_ramification_cycle",
+      "label": "Universal operational double ramification cycle",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "high",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4628606"
+      ]
+    },
+    {
+      "id": "universal_teichmuller_space_analogue",
+      "label": "Analogue of universal Teichmüller space",
+      "reason": "needs one more layer; frontier concept",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "weighted_hilbert_space_with_growth_weights",
+      "label": "Weighted Hilbert space with growth weights",
+      "reason": "needs one more layer",
+      "adequacy": "needs_one_layer",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4366415"
+      ]
+    },
+    {
+      "id": "asymptotically_hyperbolic_surface",
+      "label": "Asymptotically hyperbolic surface",
+      "reason": "has unclear context; low confidence; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "barbot_crown",
+      "label": "Barbot crown",
+      "reason": "has unclear context; low confidence",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "hitchin_li_mochizuki_section",
+      "label": "Hitchin-Li-Mochizuki section",
+      "reason": "has unclear context; low confidence; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "horofunction_boundary_method",
+      "label": "Horofunction boundary method",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "supporting",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    },
+    {
+      "id": "k3_2_numerical_type",
+      "label": "K3[2] numerical type",
+      "reason": "has unclear context",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "main",
+      "paper_ids": [
+        "mr4654610"
+      ]
+    },
+    {
+      "id": "two_class_topological_condition_for_k3_2_type",
+      "label": "Two-class topological condition for K3[2] type",
+      "reason": "has unclear context; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "medium",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4654610"
+      ]
+    },
+    {
+      "id": "universal_hitchin_map",
+      "label": "Universal Hitchin map",
+      "reason": "has unclear context; low confidence; frontier concept",
+      "adequacy": "unclear",
+      "confidence": "low",
+      "local_role": "frontier",
+      "paper_ids": [
+        "mr4601997"
+      ]
+    }
+  ],
+  "reused_nodes": [
+    {
+      "id": "polarizable_z_variation_of_hodge_structure",
+      "label": "Polarizable variation of Z-Hodge structure",
+      "paper_ids": [
+        "mr4296351",
+        "mr4557401",
+        "mr4689371",
+        "mr4736527"
+      ],
+      "paper_count": 4
+    },
+    {
+      "id": "coherent_analytic_sheaf",
+      "label": "Coherent analytic sheaf",
+      "paper_ids": [
+        "mr4270664",
+        "mr4280862",
+        "mr4557401"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "complex_monge_ampere_equation",
+      "label": "Complex Monge-Ampère equation",
+      "paper_ids": [
+        "mr4334189",
+        "mr4460593",
+        "mr4593734"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "constant_scalar_curvature_kahler_metric",
+      "label": "Constant scalar curvature Kähler metric",
+      "paper_ids": [
+        "mr4285141",
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "deligne_mumford_compactification_of_curves",
+      "label": "Deligne-Mumford compactification of curve moduli",
+      "paper_ids": [
+        "mr4337974",
+        "mr4628606",
+        "mr4740541"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "first_chern_class",
+      "label": "First Chern class",
+      "paper_ids": [
+        "mr4334189",
+        "mr4654610",
+        "mr4337974"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "gromov_hausdorff_convergence",
+      "label": "Gromov-Hausdorff convergence",
+      "paper_ids": [
+        "mr4460593",
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "klt_singularity_condition",
+      "label": "Kawamata log terminal singularity condition",
+      "paper_ids": [
+        "mr4334189",
+        "mr4419632",
+        "mr4372222"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "weakly_special_subvariety_for_variation",
+      "label": "Weakly special subvariety for a variation of Hodge structure",
+      "paper_ids": [
+        "mr4296351",
+        "mr4513144",
+        "mr4689371"
+      ],
+      "paper_count": 3
+    },
+    {
+      "id": "ball_quotient",
+      "label": "Ball quotient",
+      "paper_ids": [
+        "mr4506773",
+        "mr4513144"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "calabi_ansatz",
+      "label": "Calabi ansatz",
+      "paper_ids": [
+        "mr4506773",
+        "mr4602001"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "canonical_sheaf",
+      "label": "Canonical sheaf",
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "compact_kahler_manifold",
+      "label": "Compact Kähler manifold",
+      "paper_ids": [
+        "mr4285141",
+        "mr4593734"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "complete_calabi_yau_manifold",
+      "label": "Complete Calabi-Yau manifold",
+      "paper_ids": [
+        "mr4366415",
+        "mr4602001"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "connected_hodge_variety",
+      "label": "Connected Hodge variety",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "definite_triple_of_two_forms",
+      "label": "Definite triple of 2-forms",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "divisorial_valuation",
+      "label": "Divisorial valuation",
+      "paper_ids": [
+        "mr4334189",
+        "mr4276288"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "finite_energy_potential",
+      "label": "Finite-energy potential",
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hitchin_fibration",
+      "label": "Hitchin fibration",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hodge_class",
+      "label": "Hodge class",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hodge_locus",
+      "label": "Hodge locus",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hodge_tensor",
+      "label": "Hodge tensor",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "holomorphic_symplectic_form",
+      "label": "Holomorphic symplectic form",
+      "paper_ids": [
+        "mr4419632",
+        "mr4654610"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "hyperkahler_triple",
+      "label": "Hyperkähler triple",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "interval_collapse_of_ricci_flat_k3_metrics",
+      "label": "Interval collapse of Ricci-flat K3 metrics",
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "j_chi_functional",
+      "label": "Jχ functional",
+      "paper_ids": [
+        "mr4285141",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "k3_surface",
+      "label": "K3 surface",
+      "paper_ids": [
+        "mr4322391",
+        "mr4654610"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "kahler_metric",
+      "label": "Kähler metric",
+      "paper_ids": [
+        "mr4270664",
+        "mr4285141"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "lagrangian_fibration",
+      "label": "Lagrangian fibration",
+      "paper_ids": [
+        "mr4654610",
+        "mr4433080"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "local_monodromy",
+      "label": "Local monodromy",
+      "paper_ids": [
+        "mr4323636",
+        "mr4413746"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "mabuchi_k_energy_functional",
+      "label": "Mabuchi K-energy functional",
+      "paper_ids": [
+        "mr4285141",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "monge_ampere_entropy_bound",
+      "label": "Entropy bound for Monge-Ampère density",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "mumford_tate_group_of_hodge_structure",
+      "label": "Mumford-Tate group of a Hodge structure",
+      "paper_ids": [
+        "mr4513144",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "nonabelian_hodge_correspondence_for_twisted_moduli",
+      "label": "Non-abelian Hodge correspondence for twisted moduli",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "normal_complex_space",
+      "label": "Normal complex space",
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "p_equals_w_conjecture_higgs_character_moduli",
+      "label": "P=W conjecture for Higgs and character moduli",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "period_domain_for_polarized_hodge_structures",
+      "label": "Period domain for polarized Hodge structures",
+      "paper_ids": [
+        "mr4513144",
+        "mr4557401"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "period_map_of_zvhs",
+      "label": "Period map of a variation of Hodge structure",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "perverse_sheaf",
+      "label": "Perverse sheaf",
+      "paper_ids": [
+        "mr4280862",
+        "mr4270663"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "positive_dimensional_hodge_locus",
+      "label": "Positive-dimensional Hodge locus",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "positive_hodge_locus_closure_dichotomy",
+      "label": "Closure dichotomy for the positive-dimensional Hodge locus",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "psh_geodesic_ray",
+      "label": "Plurisubharmonic geodesic ray",
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "rational_singularities",
+      "label": "Rational singularities",
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "reflexive_coherent_sheaf",
+      "label": "Reflexive coherent sheaf",
+      "paper_ids": [
+        "mr4270664",
+        "mr4280862"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "resolution_of_singularities_complex_space",
+      "label": "Resolution of singularities of a complex space",
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "ricci_flat_kahler_metric",
+      "label": "Ricci-flat Kähler metric",
+      "paper_ids": [
+        "mr4460593",
+        "mr4322391"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "scalar_curvature_type_apriori_estimate",
+      "label": "A priori estimates for scalar-curvature type equations",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "scalar_curvature_type_coupled_equation",
+      "label": "Scalar-curvature type coupled Monge-Ampère equation",
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "special_subvariety_for_variation",
+      "label": "Special subvariety for a variation of Hodge structure",
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "stable_higgs_bundle_on_curve",
+      "label": "Stable Higgs bundle on a curve",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "stratum_of_quadratic_differentials",
+      "label": "Stratum of quadratic differentials",
+      "paper_ids": [
+        "mr4635302",
+        "mr4337974"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "surface_group_character_variety",
+      "label": "Surface group character variety",
+      "paper_ids": [
+        "mr4816435",
+        "mr4717077"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "tian_alpha_invariant",
+      "label": "Tian alpha-invariant",
+      "paper_ids": [
+        "mr4301557",
+        "mr4593734"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "tian_yau_metric",
+      "label": "Tian-Yau metric",
+      "paper_ids": [
+        "mr4506773",
+        "mr4322391"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "twisted_glr_character_variety",
+      "label": "Twisted GL_r character variety",
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "unlikely_intersection_for_period_map",
+      "label": "Unlikely intersection for the period map",
+      "paper_ids": [
+        "mr4513144",
+        "mr4689371"
+      ],
+      "paper_count": 2
+    },
+    {
+      "id": "yau_tian_donaldson_principle",
+      "label": "Yau-Tian-Donaldson principle",
+      "paper_ids": [
+        "mr4334189",
+        "mr4372222"
+      ],
+      "paper_count": 2
+    }
+  ],
+  "overlap_warnings": [
+    {
+      "id": "ball_quotient",
+      "label": "Ball quotient",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4506773",
+        "mr4513144"
+      ]
+    },
+    {
+      "id": "calabi_ansatz",
+      "label": "Calabi ansatz",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4506773",
+        "mr4602001"
+      ]
+    },
+    {
+      "id": "canonical_sheaf",
+      "label": "Canonical sheaf",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ]
+    },
+    {
+      "id": "coherent_analytic_sheaf",
+      "label": "Coherent analytic sheaf",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4270664",
+        "mr4280862",
+        "mr4557401"
+      ]
+    },
+    {
+      "id": "constant_scalar_curvature_kahler_metric",
+      "label": "Constant scalar curvature Kähler metric",
+      "ontology_statuses": [
+        "existing",
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4285141",
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "definite_triple_of_two_forms",
+      "label": "Definite triple of 2-forms",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "deligne_mumford_compactification_of_curves",
+      "label": "Deligne-Mumford compactification of curve moduli",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4337974",
+        "mr4628606",
+        "mr4740541"
+      ]
+    },
+    {
+      "id": "finite_energy_potential",
+      "label": "Finite-energy potential",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "first_chern_class",
+      "label": "First Chern class",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4654610",
+        "mr4337974"
+      ]
+    },
+    {
+      "id": "gromov_hausdorff_convergence",
+      "label": "Gromov-Hausdorff convergence",
+      "ontology_statuses": [
+        "new",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4460593",
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "hitchin_fibration",
+      "label": "Hitchin fibration",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "hodge_locus",
+      "label": "Hodge locus",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "hyperkahler_triple",
+      "label": "Hyperkähler triple",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "interval_collapse_of_ricci_flat_k3_metrics",
+      "label": "Interval collapse of Ricci-flat K3 metrics",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4816632"
+      ]
+    },
+    {
+      "id": "k3_surface",
+      "label": "K3 surface",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4322391",
+        "mr4654610"
+      ]
+    },
+    {
+      "id": "klt_singularity_condition",
+      "label": "Kawamata log terminal singularity condition",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4419632",
+        "mr4372222"
+      ]
+    },
+    {
+      "id": "local_monodromy",
+      "label": "Local monodromy",
+      "ontology_statuses": [
+        "new",
+        "refined"
+      ],
+      "paper_ids": [
+        "mr4323636",
+        "mr4413746"
+      ]
+    },
+    {
+      "id": "mabuchi_k_energy_functional",
+      "label": "Mabuchi K-energy functional",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4285141",
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "monge_ampere_entropy_bound",
+      "label": "Entropy bound for Monge-Ampère density",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "mumford_tate_group_of_hodge_structure",
+      "label": "Mumford-Tate group of a Hodge structure",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4513144",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "nonabelian_hodge_correspondence_for_twisted_moduli",
+      "label": "Non-abelian Hodge correspondence for twisted moduli",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "p_equals_w_conjecture_higgs_character_moduli",
+      "label": "P=W conjecture for Higgs and character moduli",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "period_domain_for_polarized_hodge_structures",
+      "label": "Period domain for polarized Hodge structures",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4513144",
+        "mr4557401"
+      ]
+    },
+    {
+      "id": "period_map_of_zvhs",
+      "label": "Period map of a variation of Hodge structure",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "polarizable_z_variation_of_hodge_structure",
+      "label": "Polarizable variation of Z-Hodge structure",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4557401",
+        "mr4689371",
+        "mr4736527"
+      ]
+    },
+    {
+      "id": "positive_dimensional_hodge_locus",
+      "label": "Positive-dimensional Hodge locus",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "positive_hodge_locus_closure_dichotomy",
+      "label": "Closure dichotomy for the positive-dimensional Hodge locus",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "psh_geodesic_ray",
+      "label": "Plurisubharmonic geodesic ray",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4301558"
+      ]
+    },
+    {
+      "id": "reflexive_coherent_sheaf",
+      "label": "Reflexive coherent sheaf",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4270664",
+        "mr4280862"
+      ]
+    },
+    {
+      "id": "resolution_of_singularities_complex_space",
+      "label": "Resolution of singularities of a complex space",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4280862",
+        "mr4419632"
+      ]
+    },
+    {
+      "id": "scalar_curvature_type_apriori_estimate",
+      "label": "A priori estimates for scalar-curvature type equations",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "scalar_curvature_type_coupled_equation",
+      "label": "Scalar-curvature type coupled Monge-Ampère equation",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4301558",
+        "mr4301557"
+      ]
+    },
+    {
+      "id": "special_subvariety_for_variation",
+      "label": "Special subvariety for a variation of Hodge structure",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "stable_higgs_bundle_on_curve",
+      "label": "Stable Higgs bundle on a curve",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "surface_group_character_variety",
+      "label": "Surface group character variety",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4816435",
+        "mr4717077"
+      ]
+    },
+    {
+      "id": "tian_alpha_invariant",
+      "label": "Tian alpha-invariant",
+      "ontology_statuses": [
+        "existing",
+        "uncertain"
+      ],
+      "paper_ids": [
+        "mr4301557",
+        "mr4593734"
+      ]
+    },
+    {
+      "id": "tian_yau_metric",
+      "label": "Tian-Yau metric",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4506773",
+        "mr4322391"
+      ]
+    },
+    {
+      "id": "twisted_glr_character_variety",
+      "label": "Twisted GL_r character variety",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4433080",
+        "mr4792069"
+      ]
+    },
+    {
+      "id": "unlikely_intersection_for_period_map",
+      "label": "Unlikely intersection for the period map",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4513144",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "weakly_special_subvariety_for_variation",
+      "label": "Weakly special subvariety for a variation of Hodge structure",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4296351",
+        "mr4513144",
+        "mr4689371"
+      ]
+    },
+    {
+      "id": "yau_tian_donaldson_principle",
+      "label": "Yau-Tian-Donaldson principle",
+      "ontology_statuses": [
+        "existing",
+        "new"
+      ],
+      "paper_ids": [
+        "mr4334189",
+        "mr4372222"
+      ]
+    }
+  ],
+  "relation_groups": {
+    "strict_dependency": [
+      "computed_by",
+      "constructed_using",
+      "definition_depends_on",
+      "has_primitive",
+      "has_property",
+      "specializes",
+      "uses_method"
+    ],
+    "topical": [
+      "belongs_to_topic"
+    ]
+  }
+}

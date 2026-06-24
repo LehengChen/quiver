@@ -1,0 +1,23 @@
+{
+  "schema_version": "quiver.site_collections.v1",
+  "title": "Quiver concept collections",
+  "generated_at": "2026-06-24T15:01:23.410753Z",
+  "collections": [
+    {
+      "id": "top4-complex-analysis-wide-v1",
+      "project_id": "top4-complex-analysis-wide-v1",
+      "title": "Top-4 Complex Analysis (wide)",
+      "graph": "collections/top4-complex-analysis-wide-v1/graph.json",
+      "analysis": "collections/top4-complex-analysis-wide-v1/analysis.json",
+      "manifest": "collections/top4-complex-analysis-wide-v1/manifest.json"
+    },
+    {
+      "id": "top4-geometric-analysis-narrow-v1",
+      "project_id": "top4-geometric-analysis-narrow-v1",
+      "title": "Top-4 Geometric Analysis (Narrow)",
+      "graph": "collections/top4-geometric-analysis-narrow-v1/graph.json",
+      "analysis": "collections/top4-geometric-analysis-narrow-v1/analysis.json",
+      "manifest": "collections/top4-geometric-analysis-narrow-v1/manifest.json"
+    }
+  ]
+}

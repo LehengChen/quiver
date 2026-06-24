@@ -1,0 +1,14 @@
+{
+  "schema_version": "quiver.site_manifest.v1",
+  "project_id": "top4-geometric-analysis-narrow-v1",
+  "title": "Top-4 Geometric Analysis (Narrow)",
+  "generated_at": "2026-06-24T15:01:23.038674Z",
+  "source_graph": "results/normalized/concept_graph.json",
+  "files": [
+    "analysis.json",
+    "graph.json",
+    "manifest.json"
+  ],
+  "frontend": "react",
+  "build_source": "existing_dist"
+}

@@ -1,9 +1,9 @@
 {
   "schema_version": "quiver.site_manifest.v1",
-  "project_id": "top4-geometric-analysis-narrow-v1",
-  "title": "Top-4 Geometric Analysis (Narrow)",
-  "generated_at": "2026-06-24T05:29:14.806065Z",
-  "source_graph": "results/normalized/concept_graph.json",
+  "project_id": "pages",
+  "title": "Quiver concept collections",
+  "generated_at": "2026-06-24T15:01:22.837829Z",
+  "source_graph": "collections.json",
   "files": [
     "analysis.json",
     "assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -65,13 +65,20 @@
     "assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff",
     "assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2",
     "assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf",
-    "assets/index-Cza0cxxv.css",
-    "assets/index-XQq29Pzn.js",
+    "assets/index--vkIeim4.css",
+    "assets/index-BOuuYVBO.js",
     "collections.json",
+    "collections/top4-complex-analysis-wide-v1/analysis.json",
+    "collections/top4-complex-analysis-wide-v1/graph.json",
+    "collections/top4-complex-analysis-wide-v1/manifest.json",
+    "collections/top4-geometric-analysis-narrow-v1/analysis.json",
+    "collections/top4-geometric-analysis-narrow-v1/graph.json",
+    "collections/top4-geometric-analysis-narrow-v1/manifest.json",
     "graph.json",
     "index.html",
     "manifest.json"
   ],
   "frontend": "react",
-  "build_source": "existing_dist"
+  "build_source": "existing_dist",
+  "collection_count": 2
 }
