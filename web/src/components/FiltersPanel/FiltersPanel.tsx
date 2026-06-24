@@ -1,4 +1,4 @@
-import { RotateCcw, XCircle } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 import type { SiteAnalysis } from "../../types/analysis";
 import type { GraphFilters } from "../../types/filters";
 import type { ConceptGraph } from "../../types/graph";
@@ -10,9 +10,7 @@ interface FiltersPanelProps {
   graph: ConceptGraph;
   analysis: SiteAnalysis;
   filters: GraphFilters;
-  hasSelection: boolean;
   onChange: (filters: GraphFilters) => void;
-  onClearSelection: () => void;
   onReset: () => void;
 }
 
@@ -20,7 +18,7 @@ function unique(values: Array<string | undefined>): string[] {
   return [...new Set(values.filter(Boolean) as string[])].sort((left, right) => left.localeCompare(right));
 }
 
-export function FiltersPanel({ graph, analysis, filters, hasSelection, onChange, onClearSelection, onReset }: FiltersPanelProps) {
+export function FiltersPanel({ graph, analysis, filters, onChange, onReset }: FiltersPanelProps) {
   const roles = unique(graph.nodes.map((node) => node.local_role));
   const adequacy = unique(graph.nodes.map((node) => node.adequacy));
   const confidence = unique(graph.nodes.map((node) => node.confidence));
@@ -75,12 +73,6 @@ export function FiltersPanel({ graph, analysis, filters, hasSelection, onChange,
             />
           </label>
           <div className={styles.actions}>
-            {hasSelection ? (
-              <button type="button" onClick={onClearSelection}>
-                <XCircle size={15} />
-                <span>Clear selection</span>
-              </button>
-            ) : null}
             <button type="button" onClick={onReset}>
               <RotateCcw size={15} />
               <span>Reset filters</span>

@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { ReviewTable } from "../../components/ReviewTable/ReviewTable";
 import { EvidenceList } from "../../components/EvidenceList/EvidenceList";
+import { PaperMeta } from "../../components/PaperMeta/PaperMeta";
 import { RichText } from "../../components/RichText/RichText";
 import { useCollectionPath } from "../../hooks/useCollectionPath";
 import type { SiteAnalysis } from "../../types/analysis";
@@ -41,8 +42,7 @@ export function PapersPage({ graph, analysis }: PapersPageProps) {
       {selectedPaper ? (
         <PaperSupportPanel
           graph={graph}
-          paperId={selectedPaper.id}
-          paperTitle={selectedPaper.title}
+          paper={selectedPaper}
           paperSummary={selectedPaperSummary}
           selectedNode={selectedNode}
         />
@@ -59,17 +59,16 @@ export function PapersPage({ graph, analysis }: PapersPageProps) {
 
 function PaperSupportPanel({
   graph,
-  paperId,
-  paperTitle,
+  paper,
   paperSummary,
   selectedNode
 }: {
   graph: ConceptGraph;
-  paperId: string;
-  paperTitle: string;
+  paper: ConceptGraph["papers"][number];
   paperSummary?: SiteAnalysis["paper_summaries"][number];
   selectedNode?: ConceptNode;
 }) {
+  const paperId = paper.id;
   const nodeAppearsInPaper = selectedNode ? (selectedNode.paper_ids || []).includes(paperId) : false;
   const incoming = selectedNode ? paperEdges(graph, selectedNode.id, paperId, "incoming") : [];
   const outgoing = selectedNode ? paperEdges(graph, selectedNode.id, paperId, "outgoing") : [];
@@ -77,22 +76,12 @@ function PaperSupportPanel({
 
   return (
     <section className={styles.supportPanel} aria-label="Paper support details">
-      <div className={styles.supportHeader}>
-        <div>
-          <span className={styles.eyebrow}>Paper support</span>
-          <h3>
-            <RichText text={paperTitle || paperId} inline />
-          </h3>
-          {paperSummary ? (
-            <p>
-              {paperSummary.concepts} concepts, {paperSummary.unique_concepts} unique here, {paperSummary.dependency_links} links
-            </p>
-          ) : null}
-        </div>
-        <Link to={toCollectionPath("graph", { paper: paperId, node: selectedNode?.id })}>
-          Open in graph
-        </Link>
-      </div>
+      <PaperMeta
+        paper={paper}
+        summary={paperSummary}
+        label="Paper support"
+        action={<Link to={toCollectionPath("graph", { paper: paperId, node: selectedNode?.id })}>Open in graph</Link>}
+      />
       {selectedNode ? (
         <div className={styles.nodeSupport}>
           <div className={styles.nodeTitle}>

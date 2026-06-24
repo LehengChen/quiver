@@ -1,5 +1,5 @@
-import { memo, type PointerEvent, type RefObject, useEffect, useMemo, useRef, useState } from "react";
-import { Maximize2, Minimize2, RotateCcw, XCircle } from "lucide-react";
+import { memo, type MouseEvent, type PointerEvent, type RefObject, useEffect, useMemo, useRef, useState } from "react";
+import { Maximize2, Minimize2, RotateCcw } from "lucide-react";
 import type { GraphIndexes } from "../../data/graphIndexes";
 import { neighboringNodeIds } from "../../data/selectors";
 import { buildGraphScene } from "../../graphRenderer/graphScene";
@@ -14,7 +14,6 @@ interface GraphCanvasProps {
   indexes: GraphIndexes;
   degreeByNode: Map<string, number>;
   selectedNodeId: string;
-  hasSelection: boolean;
   onClearSelection: () => void;
   onSelectNode: (nodeId: string) => void;
 }
@@ -36,23 +35,30 @@ interface CanvasEdge extends SceneEdge {
   path2d: Path2D;
 }
 
+interface DragStart {
+  x: number;
+  y: number;
+  viewX: number;
+  viewY: number;
+}
+
 export function GraphCanvas({
   nodes,
   edges,
   indexes,
   degreeByNode,
   selectedNodeId,
-  hasSelection,
   onClearSelection,
   onSelectNode
 }: GraphCanvasProps) {
   const scene = useMemo(() => buildGraphScene(nodes, edges, degreeByNode), [degreeByNode, edges, nodes]);
   const canvasEdges = useMemo<CanvasEdge[]>(() => scene.edges.map((edge) => ({ ...edge, path2d: new Path2D(edge.path) })), [scene.edges]);
   const [view, setView] = useState<ViewState>({ x: 0, y: 0, scale: 1 });
-  const [dragStart, setDragStart] = useState<{ x: number; y: number; viewX: number; viewY: number } | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const { ref: viewportRef, size: viewportSize } = useElementSize<HTMLDivElement>();
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const dragStartRef = useRef<DragStart | null>(null);
+  const suppressBlankClickRef = useRef(false);
   const frameRef = useRef<number | null>(null);
   const pendingViewRef = useRef<ViewState | null>(null);
 
@@ -143,10 +149,12 @@ export function GraphCanvas({
   function onPointerDown(event: PointerEvent<SVGSVGElement>) {
     if ((event.target as Element).closest("[data-node]")) return;
     event.currentTarget.setPointerCapture(event.pointerId);
-    setDragStart({ x: event.clientX, y: event.clientY, viewX: view.x, viewY: view.y });
+    suppressBlankClickRef.current = false;
+    dragStartRef.current = { x: event.clientX, y: event.clientY, viewX: view.x, viewY: view.y };
   }
 
   function onPointerMove(event: PointerEvent<SVGSVGElement>) {
+    const dragStart = dragStartRef.current;
     if (!dragStart) return;
     const currentScreenScale = Math.max(0.001, viewportWidth * view.scale / scene.bounds.width);
     scheduleView({
@@ -158,7 +166,26 @@ export function GraphCanvas({
 
   function onPointerUp(event: PointerEvent<SVGSVGElement>) {
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
-    setDragStart(null);
+    const dragStart = dragStartRef.current;
+    if (dragStart) {
+      const dx = event.clientX - dragStart.x;
+      const dy = event.clientY - dragStart.y;
+      const distance = Math.hypot(dx, dy);
+      suppressBlankClickRef.current = distance >= 4;
+      if (selectedNodeId && distance < 4 && !(event.target as Element).closest("[data-node]")) {
+        onClearSelection();
+      }
+    }
+    dragStartRef.current = null;
+  }
+
+  function onSvgClick(event: MouseEvent<SVGSVGElement>) {
+    if ((event.target as Element).closest("[data-node]")) return;
+    if (suppressBlankClickRef.current) {
+      suppressBlankClickRef.current = false;
+      return;
+    }
+    if (selectedNodeId) onClearSelection();
   }
 
   function resetView() {
@@ -191,11 +218,6 @@ export function GraphCanvas({
         <span>{nodes.length} concepts</span>
         <span>{edges.length} links</span>
         <span className={styles.direction}>{"prerequisite -> dependent"}</span>
-        {hasSelection ? (
-          <button type="button" onClick={onClearSelection} title="Clear selection" aria-label="Clear selection">
-            <XCircle size={15} />
-          </button>
-        ) : null}
         <button type="button" onClick={resetView} title="Reset view" aria-label="Reset view">
           <RotateCcw size={15} />
         </button>
@@ -214,6 +236,7 @@ export function GraphCanvas({
       <div ref={viewportRef} className={styles.viewport}>
         <canvas ref={canvasRef} className={styles.edgeCanvas} data-edge-count={scene.edges.length} aria-hidden="true" />
         <svg
+          data-graph-svg="true"
           className={styles.svg}
           viewBox={`0 0 ${viewportWidth} ${viewportHeight}`}
           preserveAspectRatio="none"
@@ -221,7 +244,11 @@ export function GraphCanvas({
           onPointerMove={onPointerMove}
           onPointerUp={onPointerUp}
           onPointerCancel={onPointerUp}
-          onPointerLeave={() => setDragStart(null)}
+          onPointerLeave={() => {
+            dragStartRef.current = null;
+            suppressBlankClickRef.current = false;
+          }}
+          onClick={onSvgClick}
         >
           <g data-graph-content="true" transform={graphTransform}>
             <NodeLayer

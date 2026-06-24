@@ -1,4 +1,4 @@
-import type { ConceptEdge, ConceptGraph, ConceptNode } from "../types/graph";
+import type { ConceptEdge, ConceptGraph, ConceptNode, Paper } from "../types/graph";
 
 export interface GraphIndexes {
   nodesById: Map<string, ConceptNode>;
@@ -6,6 +6,7 @@ export interface GraphIndexes {
   incomingByNode: Map<string, ConceptEdge[]>;
   outgoingByNode: Map<string, ConceptEdge[]>;
   papersById: Map<string, string>;
+  paperRecordsById: Map<string, Paper>;
 }
 
 function pushEdge(map: Map<string, ConceptEdge[]>, key: string, edge: ConceptEdge): void {
@@ -20,11 +21,12 @@ export function buildGraphIndexes(graph: ConceptGraph): GraphIndexes {
   const incomingByNode = new Map<string, ConceptEdge[]>();
   const outgoingByNode = new Map<string, ConceptEdge[]>();
   const papersById = new Map(graph.papers.map((paper) => [paper.id, paper.title]));
+  const paperRecordsById = new Map(graph.papers.map((paper) => [paper.id, paper]));
 
   graph.edges.forEach((edge) => {
     pushEdge(incomingByNode, edge.dependent, edge);
     pushEdge(outgoingByNode, edge.prerequisite, edge);
   });
 
-  return { nodesById, edgesById, incomingByNode, outgoingByNode, papersById };
+  return { nodesById, edgesById, incomingByNode, outgoingByNode, papersById, paperRecordsById };
 }

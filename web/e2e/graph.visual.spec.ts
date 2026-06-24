@@ -124,13 +124,18 @@ test("node selection opens details without changing the visible map", async ({ p
     await page.locator(`[data-node="${escapedNodeId}"] [data-node-circle="true"]`).click();
     await expect(page).toHaveURL(/node=/);
     await expect(conceptDetails).toBeVisible();
+    await expect(page.getByRole("button", { name: /clear selection/i })).toHaveCount(0);
     await expect(page.locator("[data-node]")).toHaveCount(baselineNodeCount);
     await expect(page.locator("[data-edge-count]")).toHaveAttribute("data-edge-count", baselineEdgeCount || "");
     await expect(page.locator('[aria-label="Concept dependency graph"] svg text')).toHaveCount(baselineLabelCount);
     if (index === 0) {
       await page.screenshot({ path: testInfo.outputPath("selected-node.png"), fullPage: true });
     }
-    if (index < visibleNodeIds.length - 1) {
+    if (index === 0) {
+      await page.getByText("Read dependencies from left to right.").click();
+      await expect(page).not.toHaveURL(/node=/);
+      await expect(conceptDetails).toHaveCount(0);
+    } else if (index < visibleNodeIds.length - 1) {
       await page.getByRole("button", { name: /close concept details/i }).click();
       await expect(page).not.toHaveURL(/node=/);
       await expect(conceptDetails).toHaveCount(0);
@@ -155,4 +160,7 @@ test("paper links filter the graph while preserving the selected node", async ({
   await expect(page).toHaveURL(new RegExp(`#/${COLLECTION_ID}/graph\\?[^#]*paper=[^&]+`));
   await expect(page).toHaveURL(/node=/);
   await expect(page.locator('aside[aria-label="Concept details"]')).toBeVisible();
+  const selectedPaper = page.locator('section[aria-label="Selected paper"]');
+  await expect(selectedPaper).toBeVisible();
+  await expect(selectedPaper).toContainText(/Published in|Primary MSC|DOI/);
 });

@@ -6,6 +6,7 @@ import { paperTitle } from "../../data/selectors";
 import { useCollectionPath } from "../../hooks/useCollectionPath";
 import type { ConceptNode } from "../../types/graph";
 import { EvidenceList } from "../EvidenceList/EvidenceList";
+import { formatPaperByline } from "../PaperMeta/PaperMeta";
 import { RichText } from "../RichText/RichText";
 import styles from "./InspectorPanel.module.css";
 
@@ -55,14 +56,21 @@ export function InspectorPanel({ selectedNode, indexes, onClose, onSelectNode }:
       </div>
       <h3>Papers</h3>
       <div className={styles.paperLinks}>
-        {papers.map((paperId) => (
-          <Link key={paperId} to={toCollectionPath("graph", { paper: paperId, node: selectedNode.id })}>
-            <span className={styles.paperTitle}>
-              <RichText text={paperTitle(indexes, paperId)} inline />
-            </span>
-            <strong>Filter graph</strong>
-          </Link>
-        ))}
+        {papers.map((paperId) => {
+          const paper = indexes.paperRecordsById.get(paperId);
+          const byline = paper ? formatPaperByline(paper) : "";
+          return (
+            <Link key={paperId} to={toCollectionPath("graph", { paper: paperId, node: selectedNode.id })}>
+              <span className={styles.paperText}>
+                <span className={styles.paperTitle}>
+                  <RichText text={paperTitle(indexes, paperId)} inline />
+                </span>
+                {byline ? <span className={styles.paperByline}>{byline}</span> : null}
+              </span>
+              <strong>Filter graph</strong>
+            </Link>
+          );
+        })}
         {!papers.length ? <span className={styles.empty}>No paper link is attached.</span> : null}
       </div>
       {selectedNode.aliases?.length ? <Meta label="Aliases" value={selectedNode.aliases.join("; ")} /> : null}
